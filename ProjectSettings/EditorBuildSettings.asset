@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Deaw WORKSPACE.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: 38db47454ce79234492148d8b1990773
+  - enabled: 1
+    path: Assets/Scenes/Deaw.unity
+    guid: 2884cf172878f9442bef7e0d61c90a9b
   - enabled: 1
     path: Assets/Scenes/Elliott Workspace.unity
     guid: 2cda990e2423bbf4892e6590ba056729
