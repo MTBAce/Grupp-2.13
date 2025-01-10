@@ -12,10 +12,11 @@ public class PlayerShooting : MonoBehaviour, PlayerShooting.IShootable
     }
 
     public CameraShake cameraShake;
-   
-    public Transform firePoint;
-    public GameObject bulletPrefab;
+    public Animator animator;
 
+
+    [SerializeField] Transform firePoint;
+    [SerializeField] GameObject bulletPrefab;
 
     [SerializeField] private float bulletForce;
 
@@ -23,10 +24,16 @@ public class PlayerShooting : MonoBehaviour, PlayerShooting.IShootable
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if(animator != null)
         {
-            Shoot(firePoint, bulletForce);
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                Shoot(firePoint, bulletForce);
+                animator.SetTrigger("Shooting");
+            }
         }
+
+       
     }
 
     public void Shoot(Transform firePoint, float bulletForce)

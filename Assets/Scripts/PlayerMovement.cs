@@ -60,22 +60,27 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement * currentMoveSpeed * Time.fixedDeltaTime);
 
         // Reduce stamina only when sprinting
-        if (isSprinting)
+       if (StaminaBar != null)
         {
-            Stamina -= RunCost * Time.deltaTime;
-            if (Stamina < 0) Stamina = 0; // Prevent stamina from going negative
-        }
-        else
-        {
-            // Optionally regenerate stamina when not sprinting
-            if (Stamina < Maxstamina)
+            if (isSprinting)
             {
-                Stamina += (RunCost / 2) * Time.deltaTime; // Half the RunCost as regeneration rate
-                if (Stamina > Maxstamina) Stamina = Maxstamina; // Cap stamina at max
+                Stamina -= RunCost * Time.deltaTime;
+                if (Stamina < 0) Stamina = 0; // Prevent stamina from going negative
             }
-        }
+            else
+            {
+                // Optionally regenerate stamina when not sprinting
+                if (Stamina < Maxstamina)
+                {
+                    Stamina += (RunCost / 2) * Time.deltaTime; // Half the RunCost as regeneration rate
+                    if (Stamina > Maxstamina) Stamina = Maxstamina; // Cap stamina at max
+                }
+            }
 
-        // Update stamina bar
-        StaminaBar.fillAmount = Stamina / Maxstamina;
+            // Update stamina bar
+            StaminaBar.fillAmount = Stamina / Maxstamina;
+        }
+        
+       
     }
 }
