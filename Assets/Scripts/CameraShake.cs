@@ -7,7 +7,7 @@ public class CameraShake : MonoBehaviour
 {
 
 
-    public CinemachineCamera cinemachineCamera;
+    private CinemachineCamera cinemachineCamera;
     private float shakeTimer;
     public void Awake()
     {
