@@ -1541,10 +1541,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 6862527736369549043, guid: 728c62d05f614124d8424abf2c37b538, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1561,10 +1557,6 @@ PrefabInstance:
     - target: {fileID: 2746422962223596965, guid: acdba191c56c9ff4eb8da881c542abf9, type: 3}
       propertyPath: m_Name
       value: bigEnemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 3439789672935194113, guid: acdba191c56c9ff4eb8da881c542abf9, type: 3}
-      propertyPath: m_Mass
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3992804065681703949, guid: acdba191c56c9ff4eb8da881c542abf9, type: 3}
       propertyPath: m_LocalPosition.x

@@ -28,12 +28,13 @@ public class PlayerShooting : MonoBehaviour, PlayerShooting.IShootable
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                Shoot(firePoint, bulletForce);
-                animator.SetTrigger("Shooting");
-            }
-        }
+                Shoot(firePoint, bulletForce);           
+            }    
+        } 
+      
+     
+  
 
-       
     }
 
     public void Shoot(Transform firePoint, float bulletForce)
@@ -44,8 +45,9 @@ public class PlayerShooting : MonoBehaviour, PlayerShooting.IShootable
 
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse); //Add a force to the bullet
 
-         cameraShake.ShakeCamera(3f, 0.1f); // Trigger camera shake when the player shoots
-     
+        cameraShake.ShakeCamera(3f, 0.1f); // Trigger camera shake when the player shoots
+        animator.SetTrigger("Shooting");
+
     }
 
 
