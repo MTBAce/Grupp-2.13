@@ -1,27 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Cinemachine;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class AssualtRifle : MonoBehaviour, AssualtRifle.IShootable
+public class PlayerShooting : MonoBehaviour, PlayerShooting.IShootable
 {
     public interface IShootable
     {
         void Shoot(Transform firePoint, float bulletForce);
     }
 
+    public CameraShake cameraShake;
+   
     public Transform firePoint;
     public GameObject bulletPrefab;
-    public ScreenShake screenShake;
 
-    Coroutine muzzleFlashCoroutine;
 
     [SerializeField] private float bulletForce;
-
-    void Awake()
-    {
-        screenShake = Camera.main.GetComponent<ScreenShake>();
-    }
 
  
 
@@ -41,8 +37,8 @@ public class AssualtRifle : MonoBehaviour, AssualtRifle.IShootable
 
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse); //Add a force to the bullet
 
-        screenShake.TriggerShake(0.065f, 0.13f);
-
+         cameraShake.ShakeCamera(3f, 0.1f); // Trigger camera shake when the player shoots
+     
     }
 
 

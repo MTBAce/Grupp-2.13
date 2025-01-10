@@ -1,54 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Cinemachine;
 using UnityEngine;
 
-public class ScreenShake : MonoBehaviour
+public class CameraShake : MonoBehaviour
 {
 
-    //Variables to control the length and how intense the screenshake should be
-    float shakeMagnitude;
-    float shakeDuration;
-    float dampingSpeed = 1.0f;
 
-    private Vector3 initialPosition; //Cameras inital position
-    private float currentShakeDuration; //Keeps track how long the screen has shaked
-
-
-    void Start()
+    public CinemachineCamera cinemachineCamera;
+    private float shakeTimer;
+    public void Awake()
     {
-        initialPosition = transform.position; //Sets inital position
+        cinemachineCamera = GetComponent<CinemachineCamera>();
     }
 
-
-    void Update()
+    public void ShakeCamera(float intensity, float time)
     {
-        if (currentShakeDuration > 0) //Moves the camera to create screenshake
+        CinemachineBasicMultiChannelPerlin cinemachineBasicMultiChannelPerlin =
+                        cinemachineCamera.GetComponentInChildren<CinemachineBasicMultiChannelPerlin>();
+
+        cinemachineBasicMultiChannelPerlin.AmplitudeGain = intensity;
+        shakeTimer = time;
+    }
+
+    private void Update()
+    {
+        if (shakeTimer > 0)
         {
-            Vector3 shakeOffset = Random.insideUnitCircle * shakeMagnitude;
+            shakeTimer -= Time.deltaTime;
+            if (shakeTimer <= 0f)
+            {
+                CinemachineBasicMultiChannelPerlin cinemachineBasicMultiChannelPerlin =
+                      cinemachineCamera.GetComponentInChildren<CinemachineBasicMultiChannelPerlin>();
 
-            transform.localPosition = initialPosition + shakeOffset;
-
-            currentShakeDuration -= Time.deltaTime * dampingSpeed;
-        }
-        else
-        {
-            currentShakeDuration = 0f;
-            transform.localPosition = initialPosition;
+                cinemachineBasicMultiChannelPerlin.AmplitudeGain = 0f;
+            }
         }
     }
 
-
-    public void TriggerShake(float duration, float magnitude)
-    {
-        shakeDuration = duration;    // How long the shake should last
-        shakeMagnitude = magnitude;  // The strength of the shake
-        currentShakeDuration = shakeDuration;
-    }
-
-    public void StopShake() //Resets the camera back to its initial position
-    {
-        currentShakeDuration = 0f;
-        transform.localPosition = initialPosition;
-    }
 
 }

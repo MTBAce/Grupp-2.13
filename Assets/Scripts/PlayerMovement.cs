@@ -41,11 +41,12 @@ public class PlayerMovement : MonoBehaviour
         Vector2 headDirection = mousePos - (Vector2)head.position;
         head.up = headDirection;
 
+        weapon.position = head.position;
+
 
         Vector2 playerToMouse = mousePos - (Vector2)transform.position;
 
-
-        Vector2 smoothedDirection = Vector2.Lerp(weapon.up, playerToMouse.normalized, Time.deltaTime * gunFollowSpeed);
+        Vector2 smoothedDirection = Vector2.Lerp(weapon.up.normalized, playerToMouse.normalized, Time.deltaTime * gunFollowSpeed);
         weapon.up = smoothedDirection;
     }
 

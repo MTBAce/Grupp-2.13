@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7867ccf7ee07af54186537103b04f135
+guid: 223720be2af1e034283d147dd622d77b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2459997212589772163
-    second: undefined - Imgur_0
+      213: -3477733586763734439
+    second: Character_head25 (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: undefined - Imgur_0
+      name: Character_head25 (1)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1
-        height: 1
+        x: 71
+        y: 47
+        width: 114
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d72b22b91955cddd0800000000000000
-      internalID: -2459997212589772163
+      spriteID: 952a0898abb9cbfc0800000000000000
+      internalID: -3477733586763734439
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      undefined - Imgur_0: -2459997212589772163
+      Character_head25 (1)_0: -3477733586763734439
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
