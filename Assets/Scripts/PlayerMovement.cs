@@ -5,8 +5,12 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rb;
     [SerializeField] float moveSpeed;
-    [SerializeField] float sprintSpeed;  // New serialized field for sprint speed
-    [SerializeField] KeyCode sprintKey = KeyCode.LeftShift; // The key to activate sprinting (default is Left Shift)
+    [SerializeField] float sprintSpeed;
+    [SerializeField] KeyCode sprintKey = KeyCode.LeftShift;
+
+    [SerializeField] Transform head;
+    [SerializeField] Transform weapon;
+    [SerializeField] float gunFollowSpeed;
 
     Vector2 movement;
 
@@ -27,7 +31,17 @@ public class PlayerMovement : MonoBehaviour
     private void LookAtMouse() // Gets the mouse position and rotates the character towards it
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.up = (mousePos - new Vector2(transform.position.x, transform.position.y));
+
+
+        Vector2 headDirection = mousePos - (Vector2)head.position;
+        head.up = headDirection;
+
+
+        Vector2 playerToMouse = mousePos - (Vector2)transform.position;
+
+
+        Vector2 smoothedDirection = Vector2.Lerp(weapon.up, playerToMouse.normalized, Time.deltaTime * gunFollowSpeed);
+        weapon.up = smoothedDirection;
     }
 
     void FixedUpdate()
