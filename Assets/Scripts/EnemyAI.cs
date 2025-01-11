@@ -2,13 +2,18 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    [SerializeField] float moveSpeed;
-    [SerializeField ]float stopDistance;
+    private float moveSpeed;
+    private float stopDistance;
+
+    public EnemyConfig config;
 
     private Transform player;
 
     private void Start()
     {
+        moveSpeed = config.moveSpeed;
+        stopDistance = config.stopDistance;
+
         player = GameObject.FindGameObjectWithTag("Player").transform;  
     }
 

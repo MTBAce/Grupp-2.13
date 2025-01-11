@@ -19,6 +19,9 @@ public class PlayerShooting : MonoBehaviour, PlayerShooting.IShootable
     [SerializeField] GameObject bulletPrefab;
 
     [SerializeField] private float bulletForce;
+    [SerializeField] private float fireRate;
+
+    private float nextTimeToShoot = 0f;
 
  
 
@@ -26,9 +29,10 @@ public class PlayerShooting : MonoBehaviour, PlayerShooting.IShootable
     {
         if(animator != null)
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (Input.GetKey(KeyCode.Mouse0) && Time.time >= nextTimeToShoot)
             {
                 Shoot(firePoint, bulletForce);           
+                nextTimeToShoot = Time.time + fireRate;
             }    
         } 
     }

@@ -3,8 +3,14 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    public EnemyConfig config;
 
-    private float health = 50f;
+    private float health;
+
+    private void Start()
+    {
+        health = config.health;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
