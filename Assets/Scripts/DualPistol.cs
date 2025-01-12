@@ -25,4 +25,6 @@ public class DualPistol : WeaponCore
         animator.SetTrigger(weaponData.weaponAnimation);
         cameraShake.TriggerShake(weaponData.duration, weaponData.magnitude);
     }
+
+
 }

@@ -37,4 +37,10 @@ public  class WeaponCore:MonoBehaviour
 
     }
 
+    public virtual void CancelAnim()
+    {
+        animator.SetTrigger("CancelAnim");
+    }
+
+
 }

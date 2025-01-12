@@ -45,7 +45,7 @@ public class PlayerWeaponHandler : MonoBehaviour
         {
             currentWeapon.Shoot();
 
-        }
+        }       
     
    if (Input.GetKeyDown(KeyCode.Alpha1)) 
         {
