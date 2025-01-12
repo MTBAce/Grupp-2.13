@@ -190,6 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 445eb22886345c84b89427d11f43953b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageParticles: {fileID: 4309642212988442362, guid: 5e5d196eb39418848af6371e76bb4ed2, type: 3}
   config: {fileID: 11400000, guid: 57ad398af95681f41917b2ed8faf173c, type: 2}
 --- !u!114 &6938190267480136350
 MonoBehaviour:

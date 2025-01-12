@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    [SerializeField] private ParticleSystem damageParticles;
+    
     public EnemyConfig config;
 
     private float health;
@@ -26,6 +28,7 @@ public class EnemyHealth : MonoBehaviour
     {
         health -= 10;
         Debug.Log("Enemy took damage, health: " + health);
+        DamageParticles();
 
         if (health == 0)
         {
@@ -40,4 +43,10 @@ public class EnemyHealth : MonoBehaviour
         Destroy(gameObject);
         Debug.Log("Enemy Dead");
     }
+
+    private void DamageParticles()
+    {
+        Instantiate(damageParticles, transform.position, Quaternion.identity);
+    }
+
 }

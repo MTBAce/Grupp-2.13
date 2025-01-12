@@ -11,7 +11,7 @@ public class PlayerShooting : MonoBehaviour, PlayerShooting.IShootable
         void Shoot(Transform firePoint, float bulletForce);
     }
 
-    public CameraShake cameraShake;
+    public CameraFollow cameraShake;
     public Animator animator;
 
 
@@ -20,6 +20,8 @@ public class PlayerShooting : MonoBehaviour, PlayerShooting.IShootable
 
     [SerializeField] private float bulletForce;
     [SerializeField] private float fireRate;
+
+    float sprayAngle = 4f;
 
     private float nextTimeToShoot = 0f;
 
@@ -39,15 +41,17 @@ public class PlayerShooting : MonoBehaviour, PlayerShooting.IShootable
 
     public void Shoot(Transform firePoint, float bulletForce)
     {
+        float randomAngle = Random.Range(-sprayAngle, sprayAngle);
+        Quaternion sprayRotation = Quaternion.Euler(0,0,randomAngle);
+
+        Vector3 bulletDirection = sprayRotation * firePoint.up;
+        
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation); //Spawns the bullet at the firepoints position and rotates it 90 degrees
-
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse); //Add a force to the bullet
 
-        cameraShake.ShakeCamera(3f, 0.1f); // Trigger camera shake when the player shoots
-     
-
+        animator.SetTrigger("Shooting");
+       cameraShake.TriggerShake(.1f, .3f);
     }
 
 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 223720be2af1e034283d147dd622d77b
+guid: dbf67461b49f91f44b25e8a2aca96e29
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3477733586763734439
-    second: Character_head25 (1)_0
+      213: 2284090072459464345
+    second: Alien_base__0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character_head25 (1)_0
+      name: Alien_base__0
       rect:
         serializedVersion: 2
-        x: 71
-        y: 47
-        width: 114
-        height: 122
+        x: 55
+        y: 7
+        width: 162
+        height: 218
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 952a0898abb9cbfc0800000000000000
-      internalID: -3477733586763734439
+      spriteID: 99e41fbb1d7b2bf10800000000000000
+      internalID: 2284090072459464345
       vertices: []
       indices: 
       edges: []
@@ -125,19 +125,16 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3b7f0a63824494142b65197be0fdbd33
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {fileID: 2800000, guid: d853648ea1c79024d9131e619d724bcb, type: 3}
-      name: head_emission
+    secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Character_head25 (1)_0: -3477733586763734439
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

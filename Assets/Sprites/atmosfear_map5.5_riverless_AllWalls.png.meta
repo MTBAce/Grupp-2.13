@@ -1,0 +1,1859 @@
+fileFormatVersion: 2
+guid: 5d96de69b8f4bb5469a45ed4f5adaac4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -76512386334858795
+    second: atmosfear_map5.5_riverless_AllWalls_0
+  - first:
+      213: 4816512595598279979
+    second: atmosfear_map5.5_riverless_AllWalls_1
+  - first:
+      213: -5030434584884914603
+    second: atmosfear_map5.5_riverless_AllWalls_2
+  - first:
+      213: 8846526208207638264
+    second: atmosfear_map5.5_riverless_AllWalls_3
+  - first:
+      213: 5188193603165960095
+    second: atmosfear_map5.5_riverless_AllWalls_4
+  - first:
+      213: -6151333997107484092
+    second: atmosfear_map5.5_riverless_AllWalls_5
+  - first:
+      213: 1317935724568219663
+    second: atmosfear_map5.5_riverless_AllWalls_6
+  - first:
+      213: -3286895174141854443
+    second: atmosfear_map5.5_riverless_AllWalls_7
+  - first:
+      213: 4689883620167563923
+    second: atmosfear_map5.5_riverless_AllWalls_8
+  - first:
+      213: -3329109068725915415
+    second: atmosfear_map5.5_riverless_AllWalls_9
+  - first:
+      213: -1378239311819674387
+    second: atmosfear_map5.5_riverless_AllWalls_10
+  - first:
+      213: 6278870060010961123
+    second: atmosfear_map5.5_riverless_AllWalls_11
+  - first:
+      213: -9158506932564517435
+    second: atmosfear_map5.5_riverless_AllWalls_12
+  - first:
+      213: -1404396305045250463
+    second: atmosfear_map5.5_riverless_AllWalls_13
+  - first:
+      213: -1678327598908453985
+    second: atmosfear_map5.5_riverless_AllWalls_14
+  - first:
+      213: 8847754979904670289
+    second: atmosfear_map5.5_riverless_AllWalls_15
+  - first:
+      213: -2634138316555073749
+    second: atmosfear_map5.5_riverless_AllWalls_16
+  - first:
+      213: -3743218568334480686
+    second: atmosfear_map5.5_riverless_AllWalls_17
+  - first:
+      213: 6752065770566528554
+    second: atmosfear_map5.5_riverless_AllWalls_18
+  - first:
+      213: -2638894922860798145
+    second: atmosfear_map5.5_riverless_AllWalls_19
+  - first:
+      213: -3634534685651396499
+    second: atmosfear_map5.5_riverless_AllWalls_20
+  - first:
+      213: 2596855665337124671
+    second: atmosfear_map5.5_riverless_AllWalls_21
+  - first:
+      213: -6506127186222353810
+    second: atmosfear_map5.5_riverless_AllWalls_22
+  - first:
+      213: 7121672794764882109
+    second: atmosfear_map5.5_riverless_AllWalls_23
+  - first:
+      213: 6071775491700278041
+    second: atmosfear_map5.5_riverless_AllWalls_24
+  - first:
+      213: -8441398535602208377
+    second: atmosfear_map5.5_riverless_AllWalls_25
+  - first:
+      213: -7742247056952555141
+    second: atmosfear_map5.5_riverless_AllWalls_26
+  - first:
+      213: -6243273745949456059
+    second: atmosfear_map5.5_riverless_AllWalls_27
+  - first:
+      213: 7480986983503223609
+    second: atmosfear_map5.5_riverless_AllWalls_28
+  - first:
+      213: -6962938023065921662
+    second: atmosfear_map5.5_riverless_AllWalls_29
+  - first:
+      213: -534996405877543760
+    second: atmosfear_map5.5_riverless_AllWalls_30
+  - first:
+      213: 4492654171675597223
+    second: atmosfear_map5.5_riverless_AllWalls_31
+  - first:
+      213: -1630616448716912716
+    second: atmosfear_map5.5_riverless_AllWalls_32
+  - first:
+      213: 8809932340989724860
+    second: atmosfear_map5.5_riverless_AllWalls_33
+  - first:
+      213: -1903823682898487111
+    second: atmosfear_map5.5_riverless_AllWalls_34
+  - first:
+      213: -4760367391499378519
+    second: atmosfear_map5.5_riverless_AllWalls_35
+  - first:
+      213: -7929959019615739094
+    second: atmosfear_map5.5_riverless_AllWalls_36
+  - first:
+      213: 8822227576353441724
+    second: atmosfear_map5.5_riverless_AllWalls_37
+  - first:
+      213: 7396568728835631217
+    second: atmosfear_map5.5_riverless_AllWalls_38
+  - first:
+      213: 1064246080387982826
+    second: atmosfear_map5.5_riverless_AllWalls_39
+  - first:
+      213: -1630787637525321550
+    second: atmosfear_map5.5_riverless_AllWalls_40
+  - first:
+      213: 8016164172533038309
+    second: atmosfear_map5.5_riverless_AllWalls_41
+  - first:
+      213: -82153238439195685
+    second: atmosfear_map5.5_riverless_AllWalls_42
+  - first:
+      213: 2601622038749641882
+    second: atmosfear_map5.5_riverless_AllWalls_43
+  - first:
+      213: -8292836863807954131
+    second: atmosfear_map5.5_riverless_AllWalls_44
+  - first:
+      213: -2256734447325056527
+    second: atmosfear_map5.5_riverless_AllWalls_45
+  - first:
+      213: 2005658955499162358
+    second: atmosfear_map5.5_riverless_AllWalls_46
+  - first:
+      213: -2635540929358432139
+    second: atmosfear_map5.5_riverless_AllWalls_47
+  - first:
+      213: -5294309452151964742
+    second: atmosfear_map5.5_riverless_AllWalls_48
+  - first:
+      213: 6187290268352935702
+    second: atmosfear_map5.5_riverless_AllWalls_49
+  - first:
+      213: 9164183404875292820
+    second: atmosfear_map5.5_riverless_AllWalls_50
+  - first:
+      213: -1815039213275036468
+    second: atmosfear_map5.5_riverless_AllWalls_51
+  - first:
+      213: -2213023174189460731
+    second: atmosfear_map5.5_riverless_AllWalls_52
+  - first:
+      213: -5173621029086981826
+    second: atmosfear_map5.5_riverless_AllWalls_53
+  - first:
+      213: 4428272958492157322
+    second: atmosfear_map5.5_riverless_AllWalls_54
+  - first:
+      213: 1257533980526384849
+    second: atmosfear_map5.5_riverless_AllWalls_55
+  - first:
+      213: -6860748428395214276
+    second: atmosfear_map5.5_riverless_AllWalls_56
+  - first:
+      213: -1395085127938580527
+    second: atmosfear_map5.5_riverless_AllWalls_57
+  - first:
+      213: -3572287690015250558
+    second: atmosfear_map5.5_riverless_AllWalls_58
+  - first:
+      213: 8417362987817866085
+    second: atmosfear_map5.5_riverless_AllWalls_59
+  - first:
+      213: -1453268567003407983
+    second: atmosfear_map5.5_riverless_AllWalls_60
+  - first:
+      213: 8768238890225775926
+    second: atmosfear_map5.5_riverless_AllWalls_61
+  - first:
+      213: -4760693700624502063
+    second: atmosfear_map5.5_riverless_AllWalls_62
+  - first:
+      213: -6424818071595910508
+    second: atmosfear_map5.5_riverless_AllWalls_63
+  - first:
+      213: 6013905861807204173
+    second: atmosfear_map5.5_riverless_AllWalls_64
+  - first:
+      213: -4049508629582425596
+    second: atmosfear_map5.5_riverless_AllWalls_65
+  - first:
+      213: 8793413268444564281
+    second: atmosfear_map5.5_riverless_AllWalls_66
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_0
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 2062
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d1e797d36c20fef0800000000000000
+      internalID: -76512386334858795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_1
+      rect:
+        serializedVersion: 2
+        x: 2076
+        y: 2065
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2584dccfa0b7d240800000000000000
+      internalID: 4816512595598279979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_2
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 2089
+        width: 804
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 556581eb56e403ab0800000000000000
+      internalID: -5030434584884914603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_3
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 1918
+        width: 24
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe466827bc25ca70800000000000000
+      internalID: 8846526208207638264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_4
+      rect:
+        serializedVersion: 2
+        x: 2049
+        y: 2068
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9739a6089a200840800000000000000
+      internalID: 5188193603165960095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_5
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 1912
+        width: 30
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44aef9f125212aaa0800000000000000
+      internalID: -6151333997107484092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_6
+      rect:
+        serializedVersion: 2
+        x: 2103
+        y: 2071
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f009fab0f8f3a4210800000000000000
+      internalID: 1317935724568219663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_7
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1851
+        width: 40
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51d345bf04a9262d0800000000000000
+      internalID: -3286895174141854443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_8
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1878
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ab202fd40d51140800000000000000
+      internalID: 4689883620167563923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_9
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1869
+        width: 46
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e07f0cb0f0acc1d0800000000000000
+      internalID: -3329109068725915415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_10
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 1863
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec628be5a28fdce0800000000000000
+      internalID: -1378239311819674387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_11
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 1881
+        width: 58
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e8f9cd7d07032750800000000000000
+      internalID: 6278870060010961123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_12
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 1881
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cd1a8bf77276e080800000000000000
+      internalID: -9158506932564517435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_13
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1897
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e18e95005928ce0800000000000000
+      internalID: -1404396305045250463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_14
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 1891
+        width: 39
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9bc352e0f165b8e0800000000000000
+      internalID: -1678327598908453985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_15
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1779
+        width: 268
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a49ecd64a89ca70800000000000000
+      internalID: 8847754979904670289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_16
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 1755
+        width: 88
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b274d784829a17bd0800000000000000
+      internalID: -2634138316555073749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_17
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 1785
+        width: 229
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dae6c56b8a6d0cc0800000000000000
+      internalID: -3743218568334480686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_18
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 1816
+        width: 189
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2e21ba5b0824bd50800000000000000
+      internalID: 6752065770566528554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_19
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1661
+        width: 74
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3fdc439c03c06bd0800000000000000
+      internalID: -2638894922860798145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_20
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 1692
+        width: 118
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6899e1c5f98f8dc0800000000000000
+      internalID: -3634534685651396499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_21
+      rect:
+        serializedVersion: 2
+        x: 2244
+        y: 1684
+        width: 180
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3741690872e90420800000000000000
+      internalID: 2596855665337124671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_22
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 1605
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6274b98bc795b5a0800000000000000
+      internalID: -6506127186222353810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_23
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 1494
+        width: 78
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db03682bca345d260800000000000000
+      internalID: 7121672794764882109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_24
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1497
+        width: 90
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 913c7bad3a7434450800000000000000
+      internalID: 6071775491700278041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_25
+      rect:
+        serializedVersion: 2
+        x: 2670
+        y: 1483
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7818ded91c02ada80800000000000000
+      internalID: -8441398535602208377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_26
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 1408
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b79870762530e8490800000000000000
+      internalID: -7742247056952555141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_27
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 1152
+        width: 318
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54909293b9f6b59a0800000000000000
+      internalID: -6243273745949456059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_28
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 1148
+        width: 343
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93bd709860ec1d760800000000000000
+      internalID: 7480986983503223609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_29
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 1438
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 287581e52ccae5f90800000000000000
+      internalID: -6962938023065921662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_30
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1155
+        width: 238
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bcee877a9f4398f0800000000000000
+      internalID: -534996405877543760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_31
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1243
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a996618a2d195e30800000000000000
+      internalID: 4492654171675597223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_32
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 1359
+        width: 62
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b7c151baf2ee59e0800000000000000
+      internalID: -1630616448716912716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_33
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1163
+        width: 138
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb80bef79ca234a70800000000000000
+      internalID: 8809932340989724860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_34
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 1131
+        width: 293
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b81cd182724495e0800000000000000
+      internalID: -1903823682898487111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_35
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1219
+        width: 38
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a0a3553417cfedb0800000000000000
+      internalID: -4760367391499378519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_36
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 1294
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a232660594023f190800000000000000
+      internalID: -7929959019615739094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_37
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 1101
+        width: 203
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb7c3301d39de6a70800000000000000
+      internalID: 8822227576353441724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_38
+      rect:
+        serializedVersion: 2
+        x: 1747
+        y: 1228
+        width: 46
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178a207f114e5a660800000000000000
+      internalID: 7396568728835631217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_39
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 1237
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae5a027eb26f4ce00800000000000000
+      internalID: 1064246080387982826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_40
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1160
+        width: 86
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b86431b8474e59e0800000000000000
+      internalID: -1630787637525321550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_41
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 1152
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ec7b0de7d22f3f60800000000000000
+      internalID: 8016164172533038309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_42
+      rect:
+        serializedVersion: 2
+        x: 1942
+        y: 1102
+        width: 38
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdb0fad90122cdef0800000000000000
+      internalID: -82153238439195685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_43
+      rect:
+        serializedVersion: 2
+        x: 2685
+        y: 1162
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9cff73d571da1420800000000000000
+      internalID: 2601622038749641882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1229
+        height: 1055
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2366784fcce9ec80800000000000000
+      internalID: -8292836863807954131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_45
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 712
+        width: 316
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f17dc21af77ea0e0800000000000000
+      internalID: -2256734447325056527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_46
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 820
+        width: 209
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6facb1f813885db10800000000000000
+      internalID: 2005658955499162358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_47
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 1019
+        width: 25
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 578769a0d7dac6bd0800000000000000
+      internalID: -2635540929358432139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_48
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 705
+        width: 311
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb3d7d8a95d686b0800000000000000
+      internalID: -5294309452151964742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_49
+      rect:
+        serializedVersion: 2
+        x: 1894
+        y: 999
+        width: 42
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6177867a7bbadd550800000000000000
+      internalID: 6187290268352935702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_50
+      rect:
+        serializedVersion: 2
+        x: 1907
+        y: 852
+        width: 168
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4902f18b048bd2f70800000000000000
+      internalID: 9164183404875292820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_51
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 951
+        width: 100
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc44657b37fafc6e0800000000000000
+      internalID: -1815039213275036468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_52
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 829
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503dabee523c941e0800000000000000
+      internalID: -2213023174189460731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_53
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 826
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3197c6c51b9338b0800000000000000
+      internalID: -5173621029086981826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_54
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 850
+        width: 21
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a85a4633bc2647d30800000000000000
+      internalID: 4428272958492157322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_55
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 751
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d6124a1e78a37110800000000000000
+      internalID: 1257533980526384849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_56
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 697
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a0f2877a9b9c0a0800000000000000
+      internalID: -6860748428395214276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_57
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 529
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df5ac5b779a3ace0800000000000000
+      internalID: -1395085127938580527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_58
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 547
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 287e321d54fac6ec0800000000000000
+      internalID: -3572287690015250558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_59
+      rect:
+        serializedVersion: 2
+        x: 2274
+        y: 538
+        width: 48
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56397625a0b70d470800000000000000
+      internalID: 8417362987817866085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_60
+      rect:
+        serializedVersion: 2
+        x: 1593
+        y: 281
+        width: 203
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 199558420f3f4dbe0800000000000000
+      internalID: -1453268567003407983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_61
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 287
+        width: 122
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6353ca580da0fa970800000000000000
+      internalID: 8768238890225775926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_62
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 370
+        width: 42
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d236d17d4e9eedb0800000000000000
+      internalID: -4760693700624502063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_63
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 271
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49af308010676d6a0800000000000000
+      internalID: -6424818071595910508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_64
+      rect:
+        serializedVersion: 2
+        x: 2103
+        y: 298
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4768ada48fa57350800000000000000
+      internalID: 6013905861807204173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_65
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 109
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4025cda4b514dc7c0800000000000000
+      internalID: -4049508629582425596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_map5.5_riverless_AllWalls_66
+      rect:
+        serializedVersion: 2
+        x: 2511
+        y: 124
+        width: 180
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b48d437ca780a70800000000000000
+      internalID: 8793413268444564281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      atmosfear_map5.5_riverless_AllWalls_0: -76512386334858795
+      atmosfear_map5.5_riverless_AllWalls_1: 4816512595598279979
+      atmosfear_map5.5_riverless_AllWalls_10: -1378239311819674387
+      atmosfear_map5.5_riverless_AllWalls_11: 6278870060010961123
+      atmosfear_map5.5_riverless_AllWalls_12: -9158506932564517435
+      atmosfear_map5.5_riverless_AllWalls_13: -1404396305045250463
+      atmosfear_map5.5_riverless_AllWalls_14: -1678327598908453985
+      atmosfear_map5.5_riverless_AllWalls_15: 8847754979904670289
+      atmosfear_map5.5_riverless_AllWalls_16: -2634138316555073749
+      atmosfear_map5.5_riverless_AllWalls_17: -3743218568334480686
+      atmosfear_map5.5_riverless_AllWalls_18: 6752065770566528554
+      atmosfear_map5.5_riverless_AllWalls_19: -2638894922860798145
+      atmosfear_map5.5_riverless_AllWalls_2: -5030434584884914603
+      atmosfear_map5.5_riverless_AllWalls_20: -3634534685651396499
+      atmosfear_map5.5_riverless_AllWalls_21: 2596855665337124671
+      atmosfear_map5.5_riverless_AllWalls_22: -6506127186222353810
+      atmosfear_map5.5_riverless_AllWalls_23: 7121672794764882109
+      atmosfear_map5.5_riverless_AllWalls_24: 6071775491700278041
+      atmosfear_map5.5_riverless_AllWalls_25: -8441398535602208377
+      atmosfear_map5.5_riverless_AllWalls_26: -7742247056952555141
+      atmosfear_map5.5_riverless_AllWalls_27: -6243273745949456059
+      atmosfear_map5.5_riverless_AllWalls_28: 7480986983503223609
+      atmosfear_map5.5_riverless_AllWalls_29: -6962938023065921662
+      atmosfear_map5.5_riverless_AllWalls_3: 8846526208207638264
+      atmosfear_map5.5_riverless_AllWalls_30: -534996405877543760
+      atmosfear_map5.5_riverless_AllWalls_31: 4492654171675597223
+      atmosfear_map5.5_riverless_AllWalls_32: -1630616448716912716
+      atmosfear_map5.5_riverless_AllWalls_33: 8809932340989724860
+      atmosfear_map5.5_riverless_AllWalls_34: -1903823682898487111
+      atmosfear_map5.5_riverless_AllWalls_35: -4760367391499378519
+      atmosfear_map5.5_riverless_AllWalls_36: -7929959019615739094
+      atmosfear_map5.5_riverless_AllWalls_37: 8822227576353441724
+      atmosfear_map5.5_riverless_AllWalls_38: 7396568728835631217
+      atmosfear_map5.5_riverless_AllWalls_39: 1064246080387982826
+      atmosfear_map5.5_riverless_AllWalls_4: 5188193603165960095
+      atmosfear_map5.5_riverless_AllWalls_40: -1630787637525321550
+      atmosfear_map5.5_riverless_AllWalls_41: 8016164172533038309
+      atmosfear_map5.5_riverless_AllWalls_42: -82153238439195685
+      atmosfear_map5.5_riverless_AllWalls_43: 2601622038749641882
+      atmosfear_map5.5_riverless_AllWalls_44: -8292836863807954131
+      atmosfear_map5.5_riverless_AllWalls_45: -2256734447325056527
+      atmosfear_map5.5_riverless_AllWalls_46: 2005658955499162358
+      atmosfear_map5.5_riverless_AllWalls_47: -2635540929358432139
+      atmosfear_map5.5_riverless_AllWalls_48: -5294309452151964742
+      atmosfear_map5.5_riverless_AllWalls_49: 6187290268352935702
+      atmosfear_map5.5_riverless_AllWalls_5: -6151333997107484092
+      atmosfear_map5.5_riverless_AllWalls_50: 9164183404875292820
+      atmosfear_map5.5_riverless_AllWalls_51: -1815039213275036468
+      atmosfear_map5.5_riverless_AllWalls_52: -2213023174189460731
+      atmosfear_map5.5_riverless_AllWalls_53: -5173621029086981826
+      atmosfear_map5.5_riverless_AllWalls_54: 4428272958492157322
+      atmosfear_map5.5_riverless_AllWalls_55: 1257533980526384849
+      atmosfear_map5.5_riverless_AllWalls_56: -6860748428395214276
+      atmosfear_map5.5_riverless_AllWalls_57: -1395085127938580527
+      atmosfear_map5.5_riverless_AllWalls_58: -3572287690015250558
+      atmosfear_map5.5_riverless_AllWalls_59: 8417362987817866085
+      atmosfear_map5.5_riverless_AllWalls_6: 1317935724568219663
+      atmosfear_map5.5_riverless_AllWalls_60: -1453268567003407983
+      atmosfear_map5.5_riverless_AllWalls_61: 8768238890225775926
+      atmosfear_map5.5_riverless_AllWalls_62: -4760693700624502063
+      atmosfear_map5.5_riverless_AllWalls_63: -6424818071595910508
+      atmosfear_map5.5_riverless_AllWalls_64: 6013905861807204173
+      atmosfear_map5.5_riverless_AllWalls_65: -4049508629582425596
+      atmosfear_map5.5_riverless_AllWalls_66: 8793413268444564281
+      atmosfear_map5.5_riverless_AllWalls_7: -3286895174141854443
+      atmosfear_map5.5_riverless_AllWalls_8: 4689883620167563923
+      atmosfear_map5.5_riverless_AllWalls_9: -3329109068725915415
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -177,8 +177,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c67badeb16fb0f94c95b6baada602819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
-  stopDistance: 1
   config: {fileID: 11400000, guid: 4838cf1c6ba194746ae429599113e5ec, type: 2}
 --- !u!114 &7194267493681480203
 MonoBehaviour:
@@ -192,6 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 445eb22886345c84b89427d11f43953b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageParticles: {fileID: 4309642212988442362, guid: 5e5d196eb39418848af6371e76bb4ed2, type: 3}
   config: {fileID: 11400000, guid: 4838cf1c6ba194746ae429599113e5ec, type: 2}
 --- !u!114 &8395414531615727912
 MonoBehaviour:

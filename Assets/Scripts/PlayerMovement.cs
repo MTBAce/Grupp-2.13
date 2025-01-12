@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] KeyCode sprintKey = KeyCode.LeftShift;
 
     [SerializeField] Transform head;
-    [SerializeField] Transform weapon;
+    [SerializeField] Transform gun;
     [SerializeField] float gunFollowSpeed;
 
     public Image StaminaBar;
@@ -35,19 +35,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void LookAtMouse() // Gets the mouse position and rotates the character towards it
     {
+
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-
+        // Rotate the head instantly to look at the mouse
         Vector2 headDirection = mousePos - (Vector2)head.position;
         head.up = headDirection;
 
-        weapon.position = head.position;
-
-
-        Vector2 playerToMouse = mousePos - (Vector2)transform.position;
-
-        Vector2 smoothedDirection = Vector2.Lerp(weapon.up.normalized, playerToMouse.normalized, Time.deltaTime * gunFollowSpeed);
-        weapon.up = smoothedDirection;
+        // Rotate the gun smoothly towards the mouse position
+        Vector2 gunDirection = mousePos - (Vector2)gun.position;
+        Vector2 smoothedDirection = Vector2.Lerp(gun.up, gunDirection.normalized, Time.deltaTime * gunFollowSpeed);
+        gun.up = smoothedDirection;
     }
 
     void FixedUpdate()

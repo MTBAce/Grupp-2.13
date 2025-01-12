@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 223720be2af1e034283d147dd622d77b
+guid: f211fa5ae34981e479bcd6b26c967755
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3477733586763734439
-    second: Character_head25 (1)_0
+      213: 940313686521359263
+    second: atmosfear_map5_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character_head25 (1)_0
+      name: atmosfear_map5_0
       rect:
         serializedVersion: 2
-        x: 71
-        y: 47
-        width: 114
-        height: 122
+        x: 0
+        y: 0
+        width: 3000
+        height: 2200
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 952a0898abb9cbfc0800000000000000
-      internalID: -3477733586763734439
+      spriteID: f9b2b8ed05aac0d00800000000000000
+      internalID: 940313686521359263
       vertices: []
       indices: 
       edges: []
@@ -125,19 +125,17 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3b7f0a63824494142b65197be0fdbd33
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {fileID: 2800000, guid: d853648ea1c79024d9131e619d724bcb, type: 3}
-      name: head_emission
+    secondaryTextures: []
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Character_head25 (1)_0: -3477733586763734439
+      atmosfear_map5_0: 940313686521359263
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
