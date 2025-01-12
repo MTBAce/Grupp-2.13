@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float moveSpeed;
     [SerializeField] float sprintSpeed;
     [SerializeField] KeyCode sprintKey = KeyCode.LeftShift;
+    PlayerWeaponHandler playerWeaponHandler;
 
     [SerializeField] Transform head;
     [SerializeField] Transform gun;
@@ -21,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        playerWeaponHandler = GetComponent<PlayerWeaponHandler>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -44,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
 
         // Rotate the gun smoothly towards the mouse position
         Vector2 gunDirection = mousePos - (Vector2)gun.position;
-        Vector2 smoothedDirection = Vector2.Lerp(gun.up, gunDirection.normalized, Time.deltaTime * gunFollowSpeed);
+        Vector2 smoothedDirection = Vector2.Lerp(gun.up, gunDirection.normalized, Time.deltaTime * playerWeaponHandler.currentWeapon.weaponData.gunFollowSpeed);
         gun.up = smoothedDirection;
     }
 
@@ -53,7 +55,9 @@ public class PlayerMovement : MonoBehaviour
         // If the sprint key is held down and the player is moving, multiply the speed by the sprint speed
         bool isSprinting = Input.GetKey(sprintKey) && movement.magnitude > 0 && Stamina > 0;
 
-        float currentMoveSpeed = isSprinting ? sprintSpeed : moveSpeed;
+
+        Debug.Log(playerWeaponHandler);
+        float currentMoveSpeed = isSprinting ? playerWeaponHandler.currentWeapon.weaponData.sprintSpeed : playerWeaponHandler.currentWeapon.weaponData.moveSpeed;
 
         rb.MovePosition(rb.position + movement * currentMoveSpeed * Time.fixedDeltaTime);
 
@@ -62,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (isSprinting)
             {
-                Stamina -= RunCost * Time.deltaTime;
+                Stamina -= playerWeaponHandler.currentWeapon.weaponData.runCost * Time.deltaTime;
                 if (Stamina < 0) Stamina = 0; // Prevent stamina from going negative
             }
             else

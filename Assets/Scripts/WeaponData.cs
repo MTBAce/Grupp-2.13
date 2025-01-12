@@ -16,4 +16,10 @@ public class WeaponData : ScriptableObject
     public float magnitude;
     public float duration;
 
+    [Header("Movement")]
+    public float moveSpeed;
+    public float gunFollowSpeed;
+    public float sprintSpeed;
+    public float runCost;
+
 }

@@ -2,22 +2,28 @@ using System.Runtime.CompilerServices;
 using UnityEditor;
 using UnityEngine;
 
-public class PlayerWeapon : MonoBehaviour
+public class PlayerWeaponHandler : MonoBehaviour
 {
-    private WeaponCore currentWeapon;
+    public WeaponCore currentWeapon;
     [SerializeField] GameObject arPrefab;
-    [SerializeField] GameObject shotGunPrefab;
+    [SerializeField] GameObject shotgunPrefab;
+    [SerializeField] GameObject smgPrefab;
+    [SerializeField] GameObject dualPistolPrefab;
 
     private WeaponCore ar;
-    private WeaponCore shotGun;
+    private WeaponCore shotgun;
+    private WeaponCore smg;
+    private WeaponCore dualPistol;
 
 
     private void Start()
     {
         ar = arPrefab.GetComponent<AssaultRifle>();
-        shotGun = shotGunPrefab.GetComponent<Shotgun>();
+        shotgun = shotgunPrefab.GetComponent<Shotgun>();
+        smg = smgPrefab.GetComponent<SMG>();
+        dualPistol = dualPistolPrefab.GetComponent<DualPistol>();
 
-        currentWeapon = (WeaponCore) shotGun;
+        currentWeapon = (WeaponCore) dualPistol;
     }
     public void EquipWeapon(WeaponCore newWeapon)
     {
@@ -45,10 +51,19 @@ public class PlayerWeapon : MonoBehaviour
         {
             EquipWeapon(ar);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+   if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            EquipWeapon(shotGun);
+            EquipWeapon(shotgun);
         }
+   if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            EquipWeapon(smg);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            EquipWeapon(dualPistol);
+        }
+
 
     }
 }

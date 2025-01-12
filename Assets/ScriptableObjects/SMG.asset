@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aed12424c2089334eaeda491393fb4ee, type: 3}
-  m_Name: Shotgun
+  m_Name: SMG
   m_EditorClassIdentifier: 
-  weaponName: Shotgun
-  weaponAnimation: Shotgun_Shooting
-  bulletForce: 18
-  fireRate: 0.55
-  spreadAngle: 17
-  pelletCount: 6
-  magnitude: 0.4
+  weaponName: SMG
+  weaponAnimation: SMG_Shooting
+  bulletForce: 22
+  fireRate: 0.09
+  spreadAngle: 12
+  pelletCount: 2
+  magnitude: 0.45
   duration: 0.3
-  moveSpeed: 2.5
-  gunFollowSpeed: 20
-  sprintSpeed: 3.4
-  runCost: 8
+  moveSpeed: 1.2
+  gunFollowSpeed: 7
+  sprintSpeed: 2.5
+  runCost: 20

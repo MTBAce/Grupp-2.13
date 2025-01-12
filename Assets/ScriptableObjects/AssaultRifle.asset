@@ -20,3 +20,7 @@ MonoBehaviour:
   pelletCount: 1
   magnitude: 0.15
   duration: 0.3
+  moveSpeed: 2
+  gunFollowSpeed: 18
+  sprintSpeed: 3.3
+  runCost: 16
