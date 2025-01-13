@@ -8,7 +8,9 @@ public class EnemyHealth : MonoBehaviour
     public EnemyConfig config;
 
     private float health;
+    public int pointsOnDeath = 10; // Poäng som ges när fienden dör
 
+  
     private void Start()
     {
         health = config.health;
@@ -33,12 +35,22 @@ public class EnemyHealth : MonoBehaviour
         if (health == 0)
         {
             Die();
+            // Hitta Score-komponenten i scenen
+            Score score = FindObjectOfType<Score>();
 
+            if (score != null)
+            {
+                // Lägg till poäng till spelaren
+                score.AddPoints(pointsOnDeath);
+            }
+
+ 
         }
     }
 
     private void Die()
     {
+     
         
         Destroy(gameObject);
         Debug.Log("Enemy Dead");

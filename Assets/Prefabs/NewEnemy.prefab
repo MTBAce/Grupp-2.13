@@ -251,6 +251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageParticles: {fileID: 4309642212988442362, guid: 5e5d196eb39418848af6371e76bb4ed2, type: 3}
   config: {fileID: 11400000, guid: 57ad398af95681f41917b2ed8faf173c, type: 2}
+  pointsOnDeath: 10
 --- !u!114 &448364288434037047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,6 +265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: 57ad398af95681f41917b2ed8faf173c, type: 2}
+  pHealth: {fileID: 0}
 --- !u!114 &5980761053943745733
 MonoBehaviour:
   m_ObjectHideFlags: 0

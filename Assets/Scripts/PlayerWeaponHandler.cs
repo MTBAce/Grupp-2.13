@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerWeaponHandler : MonoBehaviour
 {
     public WeaponCore currentWeapon;
+    public WeaponData weaponData;
     [SerializeField] GameObject arPrefab;
     [SerializeField] GameObject shotgunPrefab;
     [SerializeField] GameObject smgPrefab;
@@ -54,12 +55,17 @@ public class PlayerWeaponHandler : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse0))
 
         {
-            audioSource.clip = shootSound;
-            audioSource.Play();
+            if (currentWeapon.weaponData.currentAmmo > 0)
+            {
+                audioSource.clip = shootSound;
+                audioSource.Play();
 
-
-            currentWeapon.Shoot();
-
+                currentWeapon.Shoot();
+            }
+            else
+            {
+                Debug.Log("Du har slut på ammunition! Ladda om!");
+            }
         }       
     
    if (Input.GetKeyDown(KeyCode.Alpha1)) 

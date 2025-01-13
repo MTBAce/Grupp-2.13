@@ -17,6 +17,9 @@ public class Score : MonoBehaviour
 
     private string highScoreFilePath;  // Sökvägen till filen
 
+ 
+
+
     void Start()
     {
        

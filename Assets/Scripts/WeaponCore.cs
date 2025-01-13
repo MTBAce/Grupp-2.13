@@ -10,6 +10,7 @@ public  class WeaponCore:MonoBehaviour
     [SerializeField] protected GameObject bulletPrefab;
 
     protected float nextTimeToShoot = 0;
+    
     public virtual void Shoot()
     {
         if (Time.time < nextTimeToShoot) return;
@@ -19,6 +20,17 @@ public  class WeaponCore:MonoBehaviour
         FireBullet(firePoint, weaponData.spreadAngle, weaponData.pelletCount, weaponData.bulletForce);
         animator.SetTrigger(weaponData.weaponAnimation);
         cameraShake.TriggerShake(weaponData.duration, weaponData.magnitude);
+        
+        if (weaponData.currentAmmo > 0)
+        {
+            weaponData.currentAmmo--;
+            // Lägg till skjutlogik här
+            Debug.Log($"Sköt ett skott! Ammunition kvar: {weaponData.currentAmmo}");
+        }
+        else
+        {
+            Debug.Log("Inget ammunition kvar!");
+        }
     }
 
     public virtual void FireBullet(Transform firePoint, float spreadAngle, float pelletCount, float bulletForce)
