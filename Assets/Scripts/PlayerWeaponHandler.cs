@@ -15,15 +15,25 @@ public class PlayerWeaponHandler : MonoBehaviour
     private WeaponCore smg;
     private WeaponCore dualPistol;
 
+    public AudioClip shootSound;    // Ljudklipp för skjutning
+    private AudioSource audioSource;
+
 
     private void Start()
     {
+
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false; // Förhindra att ljud spelas direkt
+
+
+
         ar = arPrefab.GetComponent<AssaultRifle>();
         shotgun = shotgunPrefab.GetComponent<Shotgun>();
         smg = smgPrefab.GetComponent<SMG>();
         dualPistol = dualPistolPrefab.GetComponent<DualPistol>();
 
         currentWeapon = (WeaponCore) dualPistol;
+
     }
     public void EquipWeapon(WeaponCore newWeapon)
     {
@@ -42,7 +52,12 @@ public class PlayerWeaponHandler : MonoBehaviour
     private void Update()
     {
         if (Input.GetKey(KeyCode.Mouse0))
+
         {
+            audioSource.clip = shootSound;
+            audioSource.Play();
+
+
             currentWeapon.Shoot();
 
         }       
