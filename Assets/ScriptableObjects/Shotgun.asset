@@ -24,3 +24,4 @@ MonoBehaviour:
   gunFollowSpeed: 20
   sprintSpeed: 3.4
   runCost: 8
+  shootSound: {fileID: 8300000, guid: 72f77ceb5f36b10469efc19dac84fa07, type: 3}

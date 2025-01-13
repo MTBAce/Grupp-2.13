@@ -23,4 +23,8 @@ public class WeaponData : ScriptableObject
     public float sprintSpeed;
     public float runCost;
 
+    [Header("Sound")]
+    public AudioClip shootSound;
+
+
 }
