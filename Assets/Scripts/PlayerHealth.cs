@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class PlayerHealth : MonoBehaviour
 {
     EnemyAI enemyAI;
@@ -14,7 +15,7 @@ public class PlayerHealth : MonoBehaviour
 
     public CameraFollow cameraShake;
 
-    
+    public float healAmount = 20f; // Amount to heal when colliding with healing objects
 
     void Start()
     {
@@ -28,21 +29,41 @@ public class PlayerHealth : MonoBehaviour
             enemyAI = FindFirstObjectByType<EnemyAI>();
             TakeDamage();
         }
+        else if (collision.gameObject.CompareTag("Healing")) // Check for healing object
+        {
+            Heal(healAmount);
+
+            // Optionally destroy the healing object after collision
+            Destroy(collision.gameObject);
+        }
     }
 
     void TakeDamage()
     {
         health -= enemyAI.config.damage;
-        Debug.Log("Player Health: " + health +  ", Enemy damage: " + enemyAI.config.damage);
+        Debug.Log("Player Health: " + health + ", Enemy damage: " + enemyAI.config.damage);
         cameraShake.TriggerShake(0.3f, 0.8f);
 
-
+        // Update health bar
         healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0f, 1f);
         if (health <= 0)
         {
             gameManager.KillPlayer();
         }
-    }   
+    }
+
+    void Heal(float amount)
+    {
+        health += amount;
+
+        // Ensure health doesn't exceed maxHealth
+        health = Mathf.Clamp(health, 0, maxHealth);
+
+        Debug.Log("Player healed! Current Health: " + health);
+
+        // Update health bar
+        healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0f, 1f);
+    }
 }
 
 
