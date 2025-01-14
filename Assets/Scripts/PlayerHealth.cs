@@ -10,6 +10,9 @@ public class PlayerHealth : MonoBehaviour
     public float health;
     public float maxHealth;
     public Image healthBar;
+    public GameManager gameManager;
+
+    public CameraFollow cameraShake;
 
     
 
@@ -31,12 +34,13 @@ public class PlayerHealth : MonoBehaviour
     {
         health -= enemyAI.config.damage;
         Debug.Log("Player Health: " + health +  ", Enemy damage: " + enemyAI.config.damage);
-        
+        cameraShake.TriggerShake(0.3f, 0.8f);
+
 
         healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0f, 1f);
         if (health <= 0)
         {
-
+            gameManager.KillPlayer();
         }
     }   
 }

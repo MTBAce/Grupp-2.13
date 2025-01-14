@@ -1,20 +1,19 @@
 using UnityEngine;
 using UnityEngine.UI;
 using Unity;
+using UnityEngine.SceneManagement;
+
 public class GameManager : MonoBehaviour
 {
-    public GameObject GameOver;
+    //public GameObject GameOver;
 
-    public void KillPlayer(GameObject player)
+    public void KillPlayer()
     {
-        // Inaktivera spelaren
-        player.SetActive(false);
 
         FindFirstObjectByType<Score>().GameOver();
 
-        GameOver.SetActive(true);
-
-        Time.timeScale = 0f;
+        //GameOver.SetActive(true);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
 
 
     }
