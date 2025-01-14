@@ -12,16 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aed12424c2089334eaeda491393fb4ee, type: 3}
   m_Name: DualPistol
   m_EditorClassIdentifier: 
-  weaponName: DualPistol
+  weaponName: Dual Pistol
   weaponAnimation: DualPistol_Shooting
   bulletForce: 20
   fireRate: 0.2
   spreadAngle: 2.2
   pelletCount: 1
+  currentAmmo: 47
+  startingAmmo: 50
+  ammoBoxAmount: 20
   magnitude: 0.2
   duration: 0.3
   moveSpeed: 3.2
   gunFollowSpeed: 21
   sprintSpeed: 4.5
   runCost: 6
-  shootSound: {fileID: 0}
+  shootSound: {fileID: 8300000, guid: a496b1f55e0a41947a76bcefdfe2fe88, type: 3}

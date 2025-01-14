@@ -15,5 +15,14 @@ public class SMG : WeaponCore
 
         animator.SetTrigger(weaponData.weaponAnimation);
         cameraShake.TriggerShake(weaponData.duration, weaponData.magnitude);
+
+        audioSource.clip = weaponData.shootSound;
+        audioSource.Play();
+
+        if (weaponData.currentAmmo > 0)
+        {
+            weaponData.currentAmmo-=2;
+            ammoText.text = "Ammo: " + weaponData.currentAmmo;
+        }
     }
 }

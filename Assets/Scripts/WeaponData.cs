@@ -12,6 +12,8 @@ public class WeaponData : ScriptableObject
     public float spreadAngle;
     public int pelletCount;
     public int currentAmmo;
+    public int startingAmmo;
+    public int ammoBoxAmount;
 
     [Header("Screenshake")]
     public float magnitude;

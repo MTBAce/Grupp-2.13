@@ -18,10 +18,13 @@ MonoBehaviour:
   fireRate: 0.15
   spreadAngle: 6
   pelletCount: 1
+  currentAmmo: 149
+  startingAmmo: 160
+  ammoBoxAmount: 30
   magnitude: 0.15
   duration: 0.3
-  moveSpeed: 2
+  moveSpeed: 2.35
   gunFollowSpeed: 18
-  sprintSpeed: 3.3
-  runCost: 16
-  shootSound: {fileID: 0}
+  sprintSpeed: 3.6
+  runCost: 12
+  shootSound: {fileID: 8300000, guid: bb9e4cf8f8846d44bad7c2c7d55742cc, type: 3}

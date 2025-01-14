@@ -16,4 +16,9 @@ public class Bullet : MonoBehaviour, Bullet.IPrefabLifeTime
         void EndLifeTime(float lifeTime); //Kills the bullet after 1.3s
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(gameObject);
+    }
+
 }

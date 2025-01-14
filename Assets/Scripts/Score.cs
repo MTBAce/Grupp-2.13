@@ -41,12 +41,12 @@ public class Score : MonoBehaviour
         }
         else
         {
-            Debug.Log("Double Points is not active.");
+           // Debug.Log("Double Points is not active.");
         }
 
         currentScore += points;
         
-        Debug.Log("Points added: " + points + ", Current Score: " + currentScore);
+       // Debug.Log("Points added: " + points + ", Current Score: " + currentScore);
         currentScoreText.text = "Score: " + currentScore; // Uppdatera texten
     }
 

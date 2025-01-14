@@ -1,16 +1,28 @@
 using JetBrains.Annotations;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public  class WeaponCore:MonoBehaviour
 {
+    public AudioSource audioSource;
+
     public CameraFollow cameraShake;
     public WeaponData weaponData;
     public Transform firePoint;
     public Animator animator;
+
+    public TMP_Text ammoText;
     [SerializeField] protected GameObject bulletPrefab;
 
     protected float nextTimeToShoot = 0;
-    
+    private void Awake()
+    {
+        weaponData.currentAmmo = weaponData.startingAmmo;
+
+         ammoText.text = "Ammo: " + weaponData.currentAmmo;
+    }
+
     public virtual void Shoot()
     {
         if (Time.time < nextTimeToShoot) return;
@@ -20,16 +32,14 @@ public  class WeaponCore:MonoBehaviour
         FireBullet(firePoint, weaponData.spreadAngle, weaponData.pelletCount, weaponData.bulletForce);
         animator.SetTrigger(weaponData.weaponAnimation);
         cameraShake.TriggerShake(weaponData.duration, weaponData.magnitude);
-        
+
+        audioSource.clip = weaponData.shootSound;
+        audioSource.Play();
+        ammoText.text = "Ammo: " + weaponData.currentAmmo;
+
         if (weaponData.currentAmmo > 0)
         {
             weaponData.currentAmmo--;
-            // Lägg till skjutlogik här
-            Debug.Log($"Sköt ett skott! Ammunition kvar: {weaponData.currentAmmo}");
-        }
-        else
-        {
-            Debug.Log("Inget ammunition kvar!");
         }
     }
 

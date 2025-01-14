@@ -1,11 +1,12 @@
+using System;
 using System.Runtime.CompilerServices;
 using UnityEditor;
 using UnityEngine;
 
 public class PlayerWeaponHandler : MonoBehaviour
 {
-    public WeaponCore currentWeapon;
-    public WeaponData weaponData;
+    [NonSerialized] public WeaponCore currentWeapon;
+    [NonSerialized] public WeaponData weaponData;
     [SerializeField] GameObject arPrefab;
     [SerializeField] GameObject shotgunPrefab;
     [SerializeField] GameObject smgPrefab;
@@ -16,18 +17,9 @@ public class PlayerWeaponHandler : MonoBehaviour
     private WeaponCore smg;
     private WeaponCore dualPistol;
 
-    public AudioClip shootSound;    // Ljudklipp för skjutning
-    private AudioSource audioSource;
-
 
     private void Start()
     {
-
-        audioSource = gameObject.AddComponent<AudioSource>();
-        audioSource.playOnAwake = false; // Förhindra att ljud spelas direkt
-
-
-
         ar = arPrefab.GetComponent<AssaultRifle>();
         shotgun = shotgunPrefab.GetComponent<Shotgun>();
         smg = smgPrefab.GetComponent<SMG>();
@@ -48,6 +40,8 @@ public class PlayerWeaponHandler : MonoBehaviour
          currentWeapon.gameObject.SetActive(true);
          Debug.Log($"Equipped {currentWeapon.weaponData.weaponName}");
         
+        currentWeapon.ammoText.text = "Ammo: " + currentWeapon.weaponData.currentAmmo;
+
     }
 
     private void Update()
@@ -56,10 +50,7 @@ public class PlayerWeaponHandler : MonoBehaviour
 
         {
             if (currentWeapon.weaponData.currentAmmo > 0)
-            {
-                audioSource.clip = shootSound;
-                audioSource.Play();
-
+            {              
                 currentWeapon.Shoot();
             }
             else
@@ -84,9 +75,26 @@ public class PlayerWeaponHandler : MonoBehaviour
         {
             EquipWeapon(dualPistol);
         }
-
-
     }
+
+    public void ReFillAmmo()
+    {
+        currentWeapon.weaponData.currentAmmo += currentWeapon.weaponData.ammoBoxAmount;
+        currentWeapon.ammoText.text = "Ammo: " + currentWeapon.weaponData.currentAmmo;
+    }
+
+    /*private void OnCollisionEnter2D(Collision2D collision)
+    {
+        AmmoBox ammoBox = collision.gameObject.GetComponent<AmmoBox>();
+        if (ammoBox != null) 
+        {
+            Debug.Log("Collided ammo");
+            weaponData.currentAmmo += ammoBox.ammoBoxAmount;
+            Destroy(collision.gameObject);
+        }
+    }*/
 }
+
+
 
 

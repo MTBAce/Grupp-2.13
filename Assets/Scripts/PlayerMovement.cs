@@ -56,7 +56,6 @@ public class PlayerMovement : MonoBehaviour
         bool isSprinting = Input.GetKey(sprintKey) && movement.magnitude > 0 && Stamina > 0;
 
 
-        Debug.Log(playerWeaponHandler);
         float currentMoveSpeed = isSprinting ? playerWeaponHandler.currentWeapon.weaponData.sprintSpeed : playerWeaponHandler.currentWeapon.weaponData.moveSpeed;
 
         rb.MovePosition(rb.position + movement * currentMoveSpeed * Time.fixedDeltaTime);

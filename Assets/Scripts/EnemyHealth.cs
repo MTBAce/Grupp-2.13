@@ -36,7 +36,7 @@ public class EnemyHealth : MonoBehaviour
         {
             Die();
             // Hitta Score-komponenten i scenen
-            Score score = FindObjectOfType<Score>();
+            Score score = FindFirstObjectByType<Score>();
 
             if (score != null)
             {

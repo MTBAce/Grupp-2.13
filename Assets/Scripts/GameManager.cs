@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
         // Inaktivera spelaren
         player.SetActive(false);
 
-        FindObjectOfType<Score>().GameOver();
+        FindFirstObjectByType<Score>().GameOver();
 
         GameOver.SetActive(true);
 
