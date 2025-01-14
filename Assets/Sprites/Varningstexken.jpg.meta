@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Varningstexken_0: -4492987381744306823
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
