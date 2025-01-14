@@ -1,14 +1,20 @@
 using System;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
-   [SerializeField] int playerHealth;
     EnemyAI enemyAI;
 
     [NonSerialized] int damage;
 
-    
+    public float health;
+    public float maxHealth;
+    public Image healthBar;
+
+    void Start()
+    {
+        maxHealth = health;
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -21,16 +27,21 @@ public class PlayerHealth : MonoBehaviour
 
     void TakeDamage()
     {
-        playerHealth -= enemyAI.config.damage;
-        Debug.Log(playerHealth);
-        if (playerHealth <= 0)
+        health -= enemyAI.config.damage;
+        Debug.Log(health);
+        healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0f, 1f);
+        if (health <= 0)
         {
 
         }
 
     }
 
+
     
 
-
 }
+
+
+
+
