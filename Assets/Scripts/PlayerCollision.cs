@@ -1,3 +1,4 @@
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,16 +17,24 @@ public class PlayerCollision : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            warningImage.gameObject.SetActive(true);
-            Invoke("Dölj Varningstecken", 3f); //Detta gör så att varningstecknet går bort efter 3 sekunder som den varit uppe
+            if (warningImage != null)
+            {
+                warningImage.gameObject.SetActive(true);
+            }
         }
-        void HideWarning()
-        {
-            warningImage.gameObject.SetActive(false);
-        }
+        
     }
 
-
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            if (warningImage != null)
+            {
+                warningImage.gameObject.SetActive(false);
+            }
+        }
+    }
 
     // Update is called once per frame
     void Update()
