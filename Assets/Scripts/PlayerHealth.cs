@@ -17,9 +17,24 @@ public class PlayerHealth : MonoBehaviour
 
     public float healAmount = 20f; // Amount to heal when colliding with healing objects
 
+    public Image damageOverlay; // Assign this in the Inspector
+    public float overlayFadeSpeed = 2f; // How quickly the overlay fades out
+    private float overlayAlpha = 0f; // Current alpha value of the overlay
+
     void Start()
     {
         maxHealth = health;
+    }
+
+    private void Update()
+    {
+        // Gradually fade out the red overlay
+        if (overlayAlpha > 0)
+        {
+            overlayAlpha -= Time.deltaTime * overlayFadeSpeed;
+            overlayAlpha = Mathf.Clamp(overlayAlpha, 0, 1);
+            damageOverlay.color = new Color(damageOverlay.color.r, damageOverlay.color.g, damageOverlay.color.b, overlayAlpha);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -50,6 +65,15 @@ public class PlayerHealth : MonoBehaviour
         {
             gameManager.KillPlayer();
         }
+
+        // Trigger the red overlay effect
+        TriggerDamageOverlay();
+    }
+
+    void TriggerDamageOverlay()
+    {
+        overlayAlpha = 1f; // Set alpha to fully visible
+        damageOverlay.color = new Color(damageOverlay.color.r, damageOverlay.color.g, damageOverlay.color.b, overlayAlpha);
     }
 
     void Heal(float amount)
