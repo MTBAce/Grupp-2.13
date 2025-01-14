@@ -82,17 +82,6 @@ public class PlayerWeaponHandler : MonoBehaviour
         currentWeapon.weaponData.currentAmmo += currentWeapon.weaponData.ammoBoxAmount;
         currentWeapon.ammoText.text = "Ammo: " + currentWeapon.weaponData.currentAmmo;
     }
-
-    /*private void OnCollisionEnter2D(Collision2D collision)
-    {
-        AmmoBox ammoBox = collision.gameObject.GetComponent<AmmoBox>();
-        if (ammoBox != null) 
-        {
-            Debug.Log("Collided ammo");
-            weaponData.currentAmmo += ammoBox.ammoBoxAmount;
-            Destroy(collision.gameObject);
-        }
-    }*/
 }
 
 
