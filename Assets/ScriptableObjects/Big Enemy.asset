@@ -16,3 +16,4 @@ MonoBehaviour:
   moveSpeed: 0.5
   stopDistance: 2.5
   scoreValue: 50
+  damage: 45

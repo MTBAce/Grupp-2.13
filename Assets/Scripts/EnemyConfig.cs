@@ -10,6 +10,10 @@ public class EnemyConfig : ScriptableObject
     public float moveSpeed;
     public float stopDistance;
     public int scoreValue;
+    public int damage;
+
+
+    
 
    /* [Header("Spawn Config")]
     public float swarmerInterval;*/

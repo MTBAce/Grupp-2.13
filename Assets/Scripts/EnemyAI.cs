@@ -1,9 +1,11 @@
+using System;
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
     private float moveSpeed;
     private float stopDistance;
+    [NonSerialized] int damage;
 
     public EnemyConfig config;
     public GameManager gameManager;
@@ -16,6 +18,8 @@ public class EnemyAI : MonoBehaviour
     {
         moveSpeed = config.moveSpeed;
         stopDistance = config.stopDistance;
+        damage = config.damage;
+        
 
         player = GameObject.FindGameObjectWithTag("Player").transform;  
     }
@@ -47,18 +51,12 @@ public class EnemyAI : MonoBehaviour
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.up = direction;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+   public void DealDamage()
     {
-        // Kontrollera om fienden rör vid spelaren
-        if (collision.CompareTag("Player"))
-        {
-            Debug.Log("spelaren bombad");
-
-            //KillPlayer(collision.gameObject);
-        }
+        
     }
 
-   
+
 
 }
 
