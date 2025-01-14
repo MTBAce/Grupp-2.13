@@ -11,6 +11,8 @@ public class PlayerHealth : MonoBehaviour
     public float maxHealth;
     public Image healthBar;
 
+    
+
     void Start()
     {
         maxHealth = health;
@@ -28,18 +30,15 @@ public class PlayerHealth : MonoBehaviour
     void TakeDamage()
     {
         health -= enemyAI.config.damage;
-        Debug.Log(health);
+        Debug.Log("Player Health: " + health +  ", Enemy damage: " + enemyAI.config.damage);
+        
+
         healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0f, 1f);
         if (health <= 0)
         {
 
         }
-
-    }
-
-
-    
-
+    }   
 }
 
 
