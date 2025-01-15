@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      atmosfear_Reticle_Shotgun1_0: 8534902407021605406
+      atmosfear_Reticle_Shotgun1_1: 6520805180718672598
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

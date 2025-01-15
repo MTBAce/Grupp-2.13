@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 796401b5b64f00447bf5bae021110ce5
+guid: be1168dffb8960144bb74c72cacb00f1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8004294326518020205
-    second: atmosfear_Reticle_DualGun1_0
+      213: -9031766675394346595
+    second: Enemy_Fly2_0
   - first:
-      213: -3160848236121798983
-    second: atmosfear_Reticle_DualGun1_1
+      213: -5460304913076412817
+    second: Enemy_Fly2_1
+  - first:
+      213: 313665439641681077
+    second: Enemy_Fly2_2
+  - first:
+      213: 8712094146794077204
+    second: Enemy_Fly2_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -78,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: atmosfear_Reticle_DualGun1_0
+      name: Enemy_Fly2_0
       rect:
         serializedVersion: 2
         x: 1
-        y: 4
-        width: 7
-        height: 7
+        y: 1
+        width: 15
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3970836f7b80be090800000000000000
-      internalID: -8004294326518020205
+      spriteID: d91c8e2af08b8a280800000000000000
+      internalID: -9031766675394346595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: atmosfear_Reticle_DualGun1_1
+      name: Enemy_Fly2_1
       rect:
         serializedVersion: 2
-        x: 7
-        y: 4
-        width: 7
-        height: 7
+        x: 18
+        y: 1
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +146,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b64a01b6496224d0800000000000000
-      internalID: -3160848236121798983
+      spriteID: f6e92ca8c991934b0800000000000000
+      internalID: -5460304913076412817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Fly2_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bcb8243e0d5a5400800000000000000
+      internalID: 313665439641681077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Fly2_3
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41cbb65c77397e870800000000000000
+      internalID: 8712094146794077204
       vertices: []
       indices: 
       edges: []
@@ -160,8 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      atmosfear_Reticle_DualGun1_0: -8004294326518020205
-      atmosfear_Reticle_DualGun1_1: -3160848236121798983
+      Enemy_Fly2_0: -9031766675394346595
+      Enemy_Fly2_1: -5460304913076412817
+      Enemy_Fly2_2: 313665439641681077
+      Enemy_Fly2_3: 8712094146794077204
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
