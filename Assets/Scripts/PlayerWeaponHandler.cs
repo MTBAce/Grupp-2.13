@@ -79,7 +79,7 @@ public class PlayerWeaponHandler : MonoBehaviour
 
     public void ReFillAmmo()
     {
-        weaponData.currentAmmo += currentWeapon.weaponData.ammoBoxAmount;
+        currentWeapon.weaponData.currentAmmo += currentWeapon.weaponData.ammoBoxAmount;
         currentWeapon.ammoText.text = "Ammo: " + currentWeapon.weaponData.currentAmmo;
     }
 }

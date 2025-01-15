@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b32eb5280f342824b9bc3d054a781b70, type: 3}
   m_Name: SpeedBoost
   m_EditorClassIdentifier: 
-  powerupName: 'Increase '
+  powerupName: Increase Mobility
   powerUpIcon: {fileID: 1366818390410271617, guid: 382f5884ce839194f9612ed14287230c, type: 3}
-  afterSpeedMultiplier: 1.45
-  beforeSpeedMultiplier: 1
-  beforeRunCost: 1
-  afterRunCost: 0.65
+  speedMultiplier: 1.5
+  runCostMultiplier: 0.5
