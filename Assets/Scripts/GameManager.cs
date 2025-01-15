@@ -42,4 +42,9 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f; //Startar om spelet
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+    public void GoToMainMenu()
+    {
+        Time.timeScale = 1f; 
+        SceneManager.LoadScene("MainMenu"); 
+    }
 }
