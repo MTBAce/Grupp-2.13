@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      atmosfear_Reticle_GatlingGun1_0: -3522216136527330715
+      atmosfear_Reticle_GatlingGun1_1: -9150796486267006145
+      atmosfear_Reticle_GatlingGun1_2: -7084167068925362535
+      atmosfear_Reticle_GatlingGun1_3: 6154589640693317431
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

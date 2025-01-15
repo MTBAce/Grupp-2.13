@@ -1,18 +1,20 @@
 using UnityEngine;
 
-
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private ParticleSystem damageParticles;
-    
+
     public EnemyConfig config;
     public GameManager gameManager;
+
+    [Header("Power-Up Settings")]
+    public GameObject[] powerUps; // Lista över möjliga power-ups
+    [Range(0f, 1f)] public float dropChance = 0.5f; // Sannolikheten att en power-up spawnar (0-1)
 
     private float health;
     public int pointsOnDeath = 10; // Poäng som ges när fienden dör
 
     private PlayerWeaponHandler playerWeaponHandler;
-
 
     private void Start()
     {
@@ -52,9 +54,10 @@ public class EnemyHealth : MonoBehaviour
 
     public void Die()
     {
-        //Debug.Log("Enemy Dead");
+        Debug.Log("Enemy Dead");
+        TrySpawnPowerUp(); // Försök spawna en power-up
         gameManager.EnemyKilled();
-        Destroy(gameObject);      
+        Destroy(gameObject);
     }
 
     private void DamageParticles()
@@ -62,4 +65,21 @@ public class EnemyHealth : MonoBehaviour
         Instantiate(damageParticles, transform.position, Quaternion.identity);
     }
 
+    private void TrySpawnPowerUp()
+    {
+        // Kontrollera om vi ska spawna en power-up
+        if (Random.value <= dropChance && powerUps.Length > 0)
+        {
+            SpawnRandomPowerUp();
+        }
+    }
+
+    private void SpawnRandomPowerUp()
+    {
+        // Välj en slumpmässig power-up från listan
+        GameObject selectedPowerUp = powerUps[Random.Range(0, powerUps.Length)];
+
+        // Spawn power-up vid fiendens position
+        Instantiate(selectedPowerUp, transform.position, Quaternion.identity);
+    }
 }

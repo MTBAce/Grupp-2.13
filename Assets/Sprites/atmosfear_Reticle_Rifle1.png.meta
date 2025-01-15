@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      atmosfear_Reticle_Rifle1_0: -31665157923095681
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
