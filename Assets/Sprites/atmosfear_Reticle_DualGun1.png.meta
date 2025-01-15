@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      atmosfear_Reticle_DualGun1_0: -8004294326518020205
+      atmosfear_Reticle_DualGun1_1: -3160848236121798983
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
