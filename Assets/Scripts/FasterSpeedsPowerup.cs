@@ -3,8 +3,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "SpeedBoost", menuName = "Powerup/SpeedBoost")]
 public class FasterSpeedsPowerup : PermanentPowerupData
 {
-    public float speedMultiplier = 1.5f; // Default value for speed multiplier
-    public float runCostMultiplier = 0.5f; // Default value for run cost multiplier
+    public float speedMultiplier; // Default value for speed multiplier
+    public float runCostMultiplier; // Default value for run cost multiplier
 
     public void ApplyEffect(GameObject player)
     {

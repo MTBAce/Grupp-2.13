@@ -1,16 +1,12 @@
 using UnityEngine;
 
-public class IncreasedDamagePowerup : MonoBehaviour
+[CreateAssetMenu(fileName = "IncreasedDamage", menuName = "Powerup/IncreasedDamage")]
+public class IncreasedDamagePowerup : PermanentPowerupData
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public float damageMultiplier;
 
-    // Update is called once per frame
-    void Update()
+    public void ApplyEffect()
     {
-        
+
     }
 }
