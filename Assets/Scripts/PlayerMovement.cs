@@ -53,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         // If the sprint key is held down and the player is moving, multiply the speed by the sprint speed
-        bool isSprinting = Input.GetKey(sprintKey) && movement.magnitude > 0 && Stamina > 0;
+        bool isSprinting = Input.GetKey(sprintKey) && movement.magnitude > 0 && Stamina > 0.5f;
 
 
         float currentMoveSpeed = isSprinting ? playerWeaponHandler.currentWeapon.weaponData.sprintSpeed : playerWeaponHandler.currentWeapon.weaponData.moveSpeed;

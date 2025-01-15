@@ -41,7 +41,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            enemyAI = FindFirstObjectByType<EnemyAI>();
+            enemyAI = collision.gameObject.GetComponent<EnemyAI>();
             TakeDamage();
         }
         else if (collision.gameObject.CompareTag("Healing")) // Check for healing object

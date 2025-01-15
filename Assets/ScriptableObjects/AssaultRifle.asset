@@ -18,9 +18,10 @@ MonoBehaviour:
   fireRate: 0.15
   spreadAngle: 6
   pelletCount: 1
-  currentAmmo: 149
+  currentAmmo: 37
   startingAmmo: 160
-  ammoBoxAmount: 30
+  ammoBoxAmount: 100
+  damage: 20
   magnitude: 0.15
   duration: 0.3
   moveSpeed: 2.35

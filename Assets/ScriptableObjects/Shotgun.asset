@@ -20,7 +20,8 @@ MonoBehaviour:
   pelletCount: 6
   currentAmmo: 22
   startingAmmo: 22
-  ammoBoxAmount: 12
+  ammoBoxAmount: 22
+  damage: 7
   magnitude: 0.4
   duration: 0.3
   moveSpeed: 2.5

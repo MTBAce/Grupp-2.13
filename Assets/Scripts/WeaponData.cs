@@ -14,6 +14,7 @@ public class WeaponData : ScriptableObject
     public int currentAmmo;
     public int startingAmmo;
     public int ammoBoxAmount;
+    public int damage;
 
     [Header("Screenshake")]
     public float magnitude;

@@ -6,13 +6,18 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private ParticleSystem damageParticles;
     
     public EnemyConfig config;
+    public GameManager gameManager;
 
     private float health;
     public int pointsOnDeath = 10; // Poäng som ges när fienden dör
 
-  
+    private PlayerWeaponHandler playerWeaponHandler;
+
+
     private void Start()
     {
+        gameManager = FindFirstObjectByType<GameManager>();
+        playerWeaponHandler = FindFirstObjectByType<PlayerWeaponHandler>();
         health = config.health;
     }
 
@@ -22,17 +27,16 @@ public class EnemyHealth : MonoBehaviour
         {
             TakeDamage();
             Destroy(collision.gameObject);
-
         }
     }
 
     public void TakeDamage()
     {
-        health -= 10;
+        health -= playerWeaponHandler.currentWeapon.weaponData.damage;
         Debug.Log("Enemy took damage, health: " + health);
         DamageParticles();
 
-        if (health == 0)
+        if (health <= 0)
         {
             Die();
             // Hitta Score-komponenten i scenen
@@ -43,17 +47,14 @@ public class EnemyHealth : MonoBehaviour
                 // Lägg till poäng till spelaren
                 score.AddPoints(pointsOnDeath);
             }
-
- 
         }
     }
 
-    private void Die()
+    public void Die()
     {
-     
-        
-        Destroy(gameObject);
-        Debug.Log("Enemy Dead");
+        //Debug.Log("Enemy Dead");
+        gameManager.EnemyKilled();
+        Destroy(gameObject);      
     }
 
     private void DamageParticles()

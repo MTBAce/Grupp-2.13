@@ -20,7 +20,8 @@ MonoBehaviour:
   pelletCount: 1
   currentAmmo: 360
   startingAmmo: 360
-  ammoBoxAmount: 60
+  ammoBoxAmount: 150
+  damage: 8
   magnitude: 0.45
   duration: 0.3
   moveSpeed: 1.2

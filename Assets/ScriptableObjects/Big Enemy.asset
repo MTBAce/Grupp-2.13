@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Big Enemy
   m_EditorClassIdentifier: 
   health: 200
-  moveSpeed: 0.5
-  stopDistance: 2.5
-  scoreValue: 50
+  moveSpeed: 1.5
+  stopDistance: 1.5
+  scoreValue: 200
   damage: 45

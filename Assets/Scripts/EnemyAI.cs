@@ -12,15 +12,12 @@ public class EnemyAI : MonoBehaviour
 
     private Transform player;
 
-   
- 
     private void Start()
     {
         moveSpeed = config.moveSpeed;
         stopDistance = config.stopDistance;
         damage = config.damage;
         
-
         player = GameObject.FindGameObjectWithTag("Player").transform;  
     }
 
@@ -30,7 +27,6 @@ public class EnemyAI : MonoBehaviour
         {
             ChasePlayer();
             LookTowardsPlayer();
-
         }
     }
 
@@ -51,13 +47,6 @@ public class EnemyAI : MonoBehaviour
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.up = direction;
     }
-   public void DealDamage()
-    {
-        
-    }
-
-
-
 }
 
 

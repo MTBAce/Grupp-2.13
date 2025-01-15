@@ -1,61 +1,63 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] GameObject player;
-
-
     [SerializeField]
     private GameObject swarmerPrefab;
     [SerializeField]
     private GameObject bigSwarmerPrefab;
 
     [SerializeField]
-    private float bigSwarmerInterval;
+    private float swarmerInterval = 3.5f;
     [SerializeField]
-    private float swarmerInterval;
+    private float bigSwarmerInterval = 10f;
 
-    [SerializeField] float spawnaRadius;
+    [SerializeField]
+    private float spawnRadius;
+
+    private Transform playerTransform;
 
     void Start()
     {
-        StartCoroutine(spawnEnemy(swarmerInterval, swarmerPrefab));
-        StartCoroutine(spawnEnemy(bigSwarmerInterval, bigSwarmerPrefab));
-    }
+        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
 
-    private Vector3 GetSpawnPosition()
-    {
-        Vector3 spawnPosition;
-        bool isVisible;
-
-        do
+        if (playerTransform != null)
         {
-            spawnPosition = player.transform.position + player.transform.position + new Vector3(Random.Range(-spawnaRadius, spawnaRadius), Random.Range(-spawnaRadius, spawnaRadius), 0);
-
-            isVisible = IsPositionOutSideCameraView(spawnPosition);
+            StartCoroutine(SpawnEnemy(swarmerInterval, swarmerPrefab));
+            StartCoroutine(SpawnEnemy(bigSwarmerInterval, bigSwarmerPrefab));
         }
-        while (!isVisible);
-
-        return spawnPosition;
-        
+        else
+        {
+            Debug.LogError("Player not found in the scene.");
         }
-
-    private bool IsPositionOutSideCameraView(Vector3 position)
-    {
-        Vector3 viewportPosition = Camera.main.WorldToViewportPoint(position);
-
-        return viewportPosition.x < 0 || viewportPosition.x > 1 || viewportPosition.y < 0 || viewportPosition.y > 1;
     }
 
-    private IEnumerator spawnEnemy(float interval, GameObject enemy)
+    private IEnumerator SpawnEnemy(float interval, GameObject enemy)
     {
-        yield return new WaitForSeconds(interval);
+        while (true)
+        {
+            yield return new WaitForSeconds(interval);
+            Vector3 spawnPosition = playerTransform.position + (Vector3)(Random.insideUnitCircle * spawnRadius);
+            Instantiate(enemy, spawnPosition, Quaternion.identity);
+        }
+    }
 
-        Vector3 spawnPosition = GetSpawnPosition();
-        Instantiate(enemy, spawnPosition, Quaternion.identity);
+    public void IncreaseDifficulty()
+    {
+        swarmerInterval -= 0.4f;
+        bigSwarmerInterval -= 0.5f;
 
-        StartCoroutine(spawnEnemy(interval, enemy));
+        if (swarmerInterval < 0.2f)
+        {
+            swarmerInterval = 0.2f;
+        }
+        if (bigSwarmerInterval < 0.2f)
+        {
+            bigSwarmerInterval = 0.2f;
+        }
     }
 }
+
+
