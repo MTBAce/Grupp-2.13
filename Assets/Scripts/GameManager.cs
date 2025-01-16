@@ -17,14 +17,11 @@ public class GameManager : MonoBehaviour
     }
 
     public void KillPlayer()
-    {
-        
-
+    {      
         FindFirstObjectByType<Score>().GameOver();
 
         GameOver.SetActive(true);
-        
-        
+               
         Time.timeScale = 0f;
     }
     public void EnemyKilled()
@@ -48,3 +45,4 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu"); 
     }
 }
+

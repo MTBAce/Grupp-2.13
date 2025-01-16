@@ -13,8 +13,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Transform head;
     [SerializeField] Transform gun;
     [SerializeField] float gunFollowSpeed;
-    [SerializeField] private float speedMultiplier = 1f;
-    [SerializeField] private float runCostMultiplier = 1f;
+    [SerializeField] private float value = 1f;
+
 
     public Image StaminaBar;
     public float Stamina, Maxstamina;
@@ -68,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
             if (isSprinting)
             {
                 float baseRunCost = playerWeaponHandler.currentWeapon.weaponData.runCost;
-                Stamina -= baseRunCost * runCostMultiplier * Time.deltaTime;
+                Stamina -= baseRunCost * Time.deltaTime;
                 if (Stamina < 0) Stamina = 0; // Prevent stamina from going negative
             }
             else
@@ -88,10 +88,9 @@ public class PlayerMovement : MonoBehaviour
        
     }
 
-public void ApplyMobilityBoost(float speedMultiplier, float runCostMultiplier)
-    {
-        this.speedMultiplier = speedMultiplier;
-        this.runCostMultiplier = runCostMultiplier;
+public void ApplyMobilityBoost(float value)
+    {      
+        Debug.Log("Mobility powerup");
     }
 
 }
