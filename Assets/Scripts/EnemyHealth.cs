@@ -8,17 +8,18 @@ public class EnemyHealth : MonoBehaviour
     public GameManager gameManager;
     public float playerDamageMultiplier = 1f;
 
-    [Header("Power-Up Settings")]
-    public GameObject[] powerUps; // Lista över möjliga power-ups
+    [Header("Drop Settings")]
+    public GameObject[] supplies; // Lista över möjliga power-ups
     [Range(0f, 1f)] public float dropChance = 0.5f; // Sannolikheten att en power-up spawnar (0-1)
 
     private float health;
-    public int pointsOnDeath = 10; // Poäng som ges när fienden dör
+    public int pointsOnDeath; // Poäng som ges när fienden dör
 
     private PlayerWeaponHandler playerWeaponHandler;
 
     private void Start()
     {
+        pointsOnDeath = config.scoreValue;
         gameManager = FindFirstObjectByType<GameManager>();
         playerWeaponHandler = FindFirstObjectByType<PlayerWeaponHandler>();
         health = config.health;
@@ -71,7 +72,7 @@ public class EnemyHealth : MonoBehaviour
     private void TrySpawnPowerUp()
     {
         // Kontrollera om vi ska spawna en power-up
-        if (Random.value <= dropChance && powerUps.Length > 0)
+        if (Random.value <= dropChance && supplies.Length > 0)
         {
             SpawnRandomPowerUp();
         }
@@ -80,7 +81,7 @@ public class EnemyHealth : MonoBehaviour
     private void SpawnRandomPowerUp()
     {
         // Välj en slumpmässig power-up från listan
-        GameObject selectedPowerUp = powerUps[Random.Range(0, powerUps.Length)];
+        GameObject selectedPowerUp = supplies[Random.Range(0, supplies.Length)];
 
         // Spawn power-up vid fiendens position
         Instantiate(selectedPowerUp, transform.position, Quaternion.identity);

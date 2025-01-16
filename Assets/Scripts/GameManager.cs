@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     public void EnemyKilled()
     {
         enemiesKilled++;
-        if (enemiesKilled == 1)
+        if (enemiesKilled == 30)
         {
             enemySpawner.IncreaseDifficulty();
             powerupManager.ShowPowerupChoices();

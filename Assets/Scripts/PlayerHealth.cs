@@ -11,6 +11,8 @@ public class PlayerHealth : MonoBehaviour
     public float maxHealth;
     public Image healthBar;
     public GameManager gameManager;
+    public GameObject deathParticle;
+    public bool playerDead = false;
 
     public CameraFollow cameraShake;
 
@@ -48,21 +50,27 @@ public class PlayerHealth : MonoBehaviour
 
     void TakeDamage()
     {
-        health -= enemyAI.config.damage;
-        Debug.Log("Player Health: " + health + ", Enemy damage: " + enemyAI.config.damage);
-        cameraShake.TriggerShake(0.3f, 0.8f);
-
-        // Update health bar
-        healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0f, 1f);
-        if (health <= 0)
+        if (!playerDead)
         {
-            gameManager.KillPlayer();
+            health -= enemyAI.config.damage;
+            Debug.Log("Player Health: " + health + ", Enemy damage: " + enemyAI.config.damage);
+            cameraShake.TriggerShake(0.3f, 0.8f);
+
+            // Update health bar
+            healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0f, 1f);
+            if (health <= 0)
+            {
+
+                Instantiate(deathParticle, transform.position, Quaternion.identity);
+                playerDead = true;
+                gameManager.KillPlayer();
+            }
+
+            // Trigger the red overlay effect
+            TriggerDamageOverlay();
         }
-
-        // Trigger the red overlay effect
-        TriggerDamageOverlay();
     }
-
+        
     void TriggerDamageOverlay()
     {
         overlayAlpha = 1f; // Set alpha to fully visible

@@ -12,7 +12,7 @@ public class EnemyAI : MonoBehaviour
 
     private Transform player;
 
-    private void Start()
+    private void Awake()
     {
         moveSpeed = config.moveSpeed;
         stopDistance = config.stopDistance;

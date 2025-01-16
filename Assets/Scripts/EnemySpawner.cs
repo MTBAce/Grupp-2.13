@@ -53,6 +53,7 @@ public class EnemySpawner : MonoBehaviour
     {
         swarmerInterval -= 0.4f;
         bigSwarmerInterval -= 0.5f;
+        flyingSwarmerInterval -= 0.3f;
 
         if (swarmerInterval < 0.2f)
         {
@@ -61,6 +62,10 @@ public class EnemySpawner : MonoBehaviour
         if (bigSwarmerInterval < 0.2f)
         {
             bigSwarmerInterval = 0.2f;
+        }
+        if (flyingSwarmerInterval < 0.2f)
+        {
+            flyingSwarmerInterval = 0.2f;
         }
     }
 }

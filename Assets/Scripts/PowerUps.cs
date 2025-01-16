@@ -19,8 +19,8 @@ public class PowerUps : ScriptableObject
                 DamageModifier.ApplyDamageBoost(1.6f); // Example multiplier (adjust as needed)
                 break;
 
-            case "FlashlightRange":
-                //player.GetComponent<PlayerFlashlight>().IncreaseRange(value);
+            case "Bigger Flashlight":
+                FindFirstObjectByType<BiggerFlashlight>().IncreaseFlashlight();
                 break;
 
             default:

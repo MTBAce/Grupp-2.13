@@ -20,8 +20,8 @@ MonoBehaviour:
   spreadAngle: 12
   pelletCount: 1
   currentAmmo: 340
-  startingAmmo: 360
-  ammoBoxAmount: 150
+  startingAmmo: 200
+  ammoBoxAmount: 200
   damage: 10
   magnitude: 0.45
   duration: 0.3

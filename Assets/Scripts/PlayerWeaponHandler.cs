@@ -14,6 +14,7 @@ public class PlayerWeaponHandler : MonoBehaviour
     [SerializeField] GameObject dualPistolPrefab;
     [SerializeField] private Image crosshairImage;
     [SerializeField] private Canvas uiCanvas;
+    PlayerHealth playerHealth;
 
     private WeaponCore ar;
     private WeaponCore shotgun;
@@ -23,6 +24,7 @@ public class PlayerWeaponHandler : MonoBehaviour
 
     private void Start()
     {
+        playerHealth = GetComponent<PlayerHealth>();
         ar = arPrefab.GetComponent<AssaultRifle>();
         shotgun = shotgunPrefab.GetComponent<Shotgun>();
         smg = smgPrefab.GetComponent<SMG>();
@@ -57,38 +59,43 @@ public class PlayerWeaponHandler : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Mouse0))
-
+        if (!playerHealth.playerDead)
         {
-            if (currentWeapon.weaponData.currentAmmo > 0)
-            {              
-                currentWeapon.Shoot();
-            }
-            else
+            if (Input.GetKey(KeyCode.Mouse0))
+
             {
-                Debug.Log("Du har slut på ammunition! Ladda om!");
+                if (currentWeapon.weaponData.currentAmmo > 0)
+                {
+                    currentWeapon.Shoot();
+                }
+                else
+                {
+                    Debug.Log("Du har slut på ammunition! Ladda om!");
+                }
             }
-        }       
-    
-   if (Input.GetKeyDown(KeyCode.Alpha1)) 
-        {
-            EquipWeapon(ar);
-        }
-   if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            EquipWeapon(shotgun);
-        }
-   if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            EquipWeapon(smg);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            EquipWeapon(dualPistol);
-        }
 
-        UpdateCrosshairPositionAndRotation();
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                EquipWeapon(ar);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                EquipWeapon(shotgun);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                EquipWeapon(smg);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                EquipWeapon(dualPistol);
+            }
+
+            UpdateCrosshairPositionAndRotation();
+        }
     }
+
+       
 
     public void ReFillAmmo()
     {

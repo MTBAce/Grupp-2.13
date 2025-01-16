@@ -61,7 +61,7 @@ public int GetScore()
     {
         if (!isGameOver)
         {
-            AddPoints(10); // Använd AddPoints istället för direkt tilldelning
+            AddPoints(100); // Använd AddPoints istället för direkt tilldelning
             currentScoreText.text = "Score: " + currentScore;
         }
     }

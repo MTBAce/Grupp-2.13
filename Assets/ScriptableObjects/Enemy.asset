@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 90
   moveSpeed: 2
-  stopDistance: 1.5
+  stopDistance: 0.6
   scoreValue: 100
   damage: 15
