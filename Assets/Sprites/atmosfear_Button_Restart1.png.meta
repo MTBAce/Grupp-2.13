@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      atmosfear_Button_Restart1_0: -7642320803211012363
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
