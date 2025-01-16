@@ -39,7 +39,7 @@ public class EnemyHealth : MonoBehaviour
         // Use the static damage multiplier from DamageModifier
         float damage = playerWeaponHandler.currentWeapon.weaponData.damage * DamageModifier.damageMultiplier;
         health -= damage;
-        Debug.Log("Enemy took damage, health: " + health);
+        //Debug.Log("Enemy took damage, health: " + health);
         DamageParticles();
 
         if (health <= 0)
@@ -58,7 +58,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void Die()
     {
-        Debug.Log("Enemy Dead");
+        //Debug.Log("Enemy Dead");
         TrySpawnPowerUp(); // Försök spawna en power-up
         gameManager.EnemyKilled();
         Destroy(gameObject);

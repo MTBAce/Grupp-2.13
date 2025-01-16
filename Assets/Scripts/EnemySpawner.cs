@@ -51,6 +51,8 @@ public class EnemySpawner : MonoBehaviour
 
     public void IncreaseDifficulty()
     {
+       Debug.Log("Increasing difficulty");
+
         swarmerInterval -= 0.4f;
         bigSwarmerInterval -= 0.5f;
         flyingSwarmerInterval -= 0.3f;

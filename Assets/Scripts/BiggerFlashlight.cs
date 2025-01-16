@@ -12,8 +12,8 @@ public class BiggerFlashlight : MonoBehaviour
 
     public void IncreaseFlashlight()
     {
-        light.pointLightOuterAngle += 15;
-        light.pointLightInnerAngle += 15;
+        light.pointLightOuterAngle += 6;
+        light.pointLightInnerAngle += 6;
     }
 
 
