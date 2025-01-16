@@ -29,7 +29,13 @@ public class PlayerWeaponHandler : MonoBehaviour
         dualPistol = dualPistolPrefab.GetComponent<DualPistol>();
 
         EquipWeapon(dualPistol);
+        
+        
+            // Döljer muspekaren
+        Cursor.visible = false;
 
+            // Låser musen till mitten av skärmen (valfritt)
+        Cursor.lockState = CursorLockMode.None; // Eller CursorLockMode.Locked
     }
     public void EquipWeapon(WeaponCore newWeapon)
     {
