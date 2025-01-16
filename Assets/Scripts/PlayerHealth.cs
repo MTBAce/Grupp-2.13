@@ -37,20 +37,14 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collider.gameObject.CompareTag("Enemy"))
         {
-            enemyAI = collision.gameObject.GetComponent<EnemyAI>();
+            enemyAI = collider.gameObject.GetComponent<EnemyAI>();
             TakeDamage();
         }
-        else if (collision.gameObject.CompareTag("Healing")) // Check for healing object
-        {
-            Heal(healAmount);
-
-            // Optionally destroy the healing object after collision
-            Destroy(collision.gameObject);
-        }
+        
     }
 
     void TakeDamage()
@@ -76,7 +70,7 @@ public class PlayerHealth : MonoBehaviour
         damageOverlay.color = new Color(damageOverlay.color.r, damageOverlay.color.g, damageOverlay.color.b, overlayAlpha);
     }
 
-    void Heal(float amount)
+    public void Heal(float amount)
     {
         health += amount;
 
@@ -89,7 +83,5 @@ public class PlayerHealth : MonoBehaviour
         healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0f, 1f);
     }
 }
-
-
 
 

@@ -8,11 +8,15 @@ public class EnemySpawner : MonoBehaviour
     private GameObject swarmerPrefab;
     [SerializeField]
     private GameObject bigSwarmerPrefab;
+    [SerializeField]
+    private GameObject flyingSwarmerPrefab;
 
     [SerializeField]
     private float swarmerInterval = 3.5f;
     [SerializeField]
     private float bigSwarmerInterval = 10f;
+    [SerializeField]
+    private float flyingSwarmerInterval = 5f;
 
     [SerializeField]
     private float spawnRadius;
@@ -27,6 +31,7 @@ public class EnemySpawner : MonoBehaviour
         {
             StartCoroutine(SpawnEnemy(swarmerInterval, swarmerPrefab));
             StartCoroutine(SpawnEnemy(bigSwarmerInterval, bigSwarmerPrefab));
+            StartCoroutine(SpawnEnemy(flyingSwarmerInterval, flyingSwarmerPrefab));
         }
         else
         {
