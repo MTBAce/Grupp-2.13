@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 796401b5b64f00447bf5bae021110ce5
+guid: ea5031a8f81e4284ca470376e6b07d11
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8004294326518020205
-    second: atmosfear_Reticle_DualGun1_0
+      213: -6420223047336609260
+    second: atmosfear_Reticle_DualGun1 1_0
   - first:
-      213: -3160848236121798983
-    second: atmosfear_Reticle_DualGun1_1
+      213: 1314104169415687520
+    second: atmosfear_Reticle_DualGun1 1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: atmosfear_Reticle_DualGun1_0
+      name: atmosfear_Reticle_DualGun1 1_0
       rect:
         serializedVersion: 2
         x: 1
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3970836f7b80be090800000000000000
-      internalID: -8004294326518020205
+      spriteID: 41ab9bc7729c6e6a0800000000000000
+      internalID: -6420223047336609260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: atmosfear_Reticle_DualGun1_1
+      name: atmosfear_Reticle_DualGun1 1_1
       rect:
         serializedVersion: 2
         x: 7
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b64a01b6496224d0800000000000000
-      internalID: -3160848236121798983
+      spriteID: 06db1e797c2ac3210800000000000000
+      internalID: 1314104169415687520
       vertices: []
       indices: 
       edges: []
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      atmosfear_Reticle_DualGun1_0: -8004294326518020205
-      atmosfear_Reticle_DualGun1_1: -3160848236121798983
+      atmosfear_Reticle_DualGun1 1_0: -6420223047336609260
+      atmosfear_Reticle_DualGun1 1_1: 1314104169415687520
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

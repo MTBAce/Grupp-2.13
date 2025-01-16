@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 796401b5b64f00447bf5bae021110ce5
+guid: cfd273aac39ef914db8cde17aea12015
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8004294326518020205
-    second: atmosfear_Reticle_DualGun1_0
+      213: -3332923099745618490
+    second: atmosfear_Reticle_GatlingGun1 1_0
   - first:
-      213: -3160848236121798983
-    second: atmosfear_Reticle_DualGun1_1
+      213: 4873136766219107927
+    second: atmosfear_Reticle_GatlingGun1 1_1
+  - first:
+      213: -5657400382325526062
+    second: atmosfear_Reticle_GatlingGun1 1_2
+  - first:
+      213: -3906710634865296915
+    second: atmosfear_Reticle_GatlingGun1 1_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: atmosfear_Reticle_DualGun1_0
+      name: atmosfear_Reticle_GatlingGun1 1_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 4
-        width: 7
-        height: 7
+        x: 0
+        y: 9
+        width: 5
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3970836f7b80be090800000000000000
-      internalID: -8004294326518020205
+      spriteID: 6c5f7ff69141fb1d0800000000000000
+      internalID: -3332923099745618490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: atmosfear_Reticle_DualGun1_1
+      name: atmosfear_Reticle_GatlingGun1 1_1
       rect:
         serializedVersion: 2
-        x: 7
-        y: 4
-        width: 7
-        height: 7
+        x: 0
+        y: 0
+        width: 9
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +146,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b64a01b6496224d0800000000000000
-      internalID: -3160848236121798983
+      spriteID: 75eb264e11cd0a340800000000000000
+      internalID: 4873136766219107927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_Reticle_GatlingGun1 1_2
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 9
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d1f3539350ec71b0800000000000000
+      internalID: -5657400382325526062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atmosfear_Reticle_GatlingGun1 1_3
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de9fc90506398c9c0800000000000000
+      internalID: -3906710634865296915
       vertices: []
       indices: 
       edges: []
@@ -150,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      atmosfear_Reticle_DualGun1_0: -8004294326518020205
-      atmosfear_Reticle_DualGun1_1: -3160848236121798983
+      atmosfear_Reticle_GatlingGun1 1_0: -3332923099745618490
+      atmosfear_Reticle_GatlingGun1 1_1: 4873136766219107927
+      atmosfear_Reticle_GatlingGun1 1_2: -5657400382325526062
+      atmosfear_Reticle_GatlingGun1 1_3: -3906710634865296915
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
