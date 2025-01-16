@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class PlayerHealth : MonoBehaviour
 {
     EnemyAI enemyAI;
@@ -70,7 +69,7 @@ public class PlayerHealth : MonoBehaviour
         damageOverlay.color = new Color(damageOverlay.color.r, damageOverlay.color.g, damageOverlay.color.b, overlayAlpha);
     }
 
-    public void Heal(float amount)
+   public void Heal(float amount)
     {
         health += amount;
 
@@ -83,5 +82,4 @@ public class PlayerHealth : MonoBehaviour
         healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0f, 1f);
     }
 }
-
 
