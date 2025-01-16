@@ -81,7 +81,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -9031766675394346595, guid: be1168dffb8960144bb74c72cacb00f1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShadowGroup: 0
-  m_Priority: 1
+  m_Priority: 2
   m_ComponentVersion: 5
   m_HasRenderer: 1
   m_UseRendererSilhouette: 1
@@ -213,7 +213,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.034405388, y: 0.064108044}
+    - - {x: -0.004799681, y: 0.06442417}
+      - {x: -0.034405388, y: 0.064108044}
       - {x: -0.044999998, y: 0.035}
       - {x: -0.06785766, y: 0.0015638708}
       - {x: -0.06663805, y: -0.029312009}
@@ -225,7 +226,7 @@ PolygonCollider2D:
       - {x: 0.06765061, y: 0.003936498}
       - {x: 0.044999998, y: 0.035}
       - {x: 0.031963788, y: 0.06440537}
-      - {x: 0.03345033, y: 0.065}
+      - {x: 0.000262212, y: 0.06444222}
   m_UseDelaunayMesh: 0
 --- !u!114 &-339298490506956506
 MonoBehaviour:
@@ -256,6 +257,7 @@ MonoBehaviour:
   damageParticles: {fileID: 4309642212988442362, guid: 5e5d196eb39418848af6371e76bb4ed2, type: 3}
   config: {fileID: 11400000, guid: c7f2b4dd9c5d8914b95412ab943d42be, type: 2}
   gameManager: {fileID: 0}
+  playerDamageMultiplier: 1
   powerUps:
   - {fileID: 6900571158353885079, guid: 486af52797c347d47bf35226571c33cc, type: 3}
   - {fileID: 7432252503644127356, guid: 5f18cf05078f00e48b1316253dba6b25, type: 3}
