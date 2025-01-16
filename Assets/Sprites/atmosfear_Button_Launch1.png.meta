@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 50b5ba334b0b48540ab1f47f4dead1d4
+guid: 24f26e8ec59d8284ab4986a44e4a0a0b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -728792561951814416
-    second: atmosfear_Button_Menu1_0
+      213: -773767293534796894
+    second: atmosfear_Button_Launch1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: atmosfear_Button_Menu1_0
+      name: atmosfear_Button_Launch1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0fc4ae5b60fc2e5f0800000000000000
-      internalID: -728792561951814416
+      spriteID: 2a30b020fb60345f0800000000000000
+      internalID: -773767293534796894
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      atmosfear_Button_Menu1_0: -728792561951814416
+      atmosfear_Button_Launch1_0: -773767293534796894
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

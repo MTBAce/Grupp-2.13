@@ -6,6 +6,7 @@ public class EnemyHealth : MonoBehaviour
 
     public EnemyConfig config;
     public GameManager gameManager;
+    public float playerDamageMultiplier = 1f;
 
     [Header("Power-Up Settings")]
     public GameObject[] powerUps; // Lista över möjliga power-ups
@@ -34,19 +35,21 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage()
     {
-        health -= playerWeaponHandler.currentWeapon.weaponData.damage;
+        // Use the static damage multiplier from DamageModifier
+        float damage = playerWeaponHandler.currentWeapon.weaponData.damage * DamageModifier.damageMultiplier;
+        health -= damage;
         Debug.Log("Enemy took damage, health: " + health);
         DamageParticles();
 
         if (health <= 0)
         {
             Die();
-            // Hitta Score-komponenten i scenen
+            // Find the Score component in the scene
             Score score = FindFirstObjectByType<Score>();
 
             if (score != null)
             {
-                // Lägg till poäng till spelaren
+                // Add points to the player
                 score.AddPoints(pointsOnDeath);
             }
         }
@@ -82,4 +85,5 @@ public class EnemyHealth : MonoBehaviour
         // Spawn power-up vid fiendens position
         Instantiate(selectedPowerUp, transform.position, Quaternion.identity);
     }
+
 }

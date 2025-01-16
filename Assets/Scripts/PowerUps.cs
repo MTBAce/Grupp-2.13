@@ -1,23 +1,22 @@
 using UnityEngine;
-using static UnityEngine.Rendering.DebugUI;
 
 [CreateAssetMenu(fileName = "NewPowerup", menuName = "Powerup/New Powerup")]
 public class PowerUps : ScriptableObject
 {
     public string powerupName;
     public Sprite icon;
-    public float value;
 
-    public void Apply(GameObject player)
+    public void Apply()
     {
         switch (powerupName)
         {
-            case "SpeedBoost":
-                player.GetComponent<PlayerMovement>().ApplyMobilityBoost(value);
+            case "Increased Mobility":
+                FindFirstObjectByType<PlayerMovement>().ApplyMobilityBoost();
                 break;
 
-            case "WeaponDamage":
-               // player.GetComponent<PlayerWeaponHandler>().BoostDamage(value);
+            case "Increased Damage":
+                // Apply the damage boost globally using the static class
+                DamageModifier.ApplyDamageBoost(1.6f); // Example multiplier (adjust as needed)
                 break;
 
             case "FlashlightRange":
@@ -25,7 +24,7 @@ public class PowerUps : ScriptableObject
                 break;
 
             default:
-                //Debug.LogWarning("Unknown powerup: " + powerupName);
+                Debug.LogWarning("Unknown powerup: " + powerupName);
                 break;
         }
     }

@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
 
         GameOver.SetActive(true);
                
-        Time.timeScale = 0f;
+        Time.timeScale = .2f;
     }
     public void EnemyKilled()
     {

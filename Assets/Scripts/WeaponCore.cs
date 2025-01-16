@@ -11,6 +11,7 @@ public  class WeaponCore:MonoBehaviour
     public WeaponData weaponData;
     public Transform firePoint;
     public Animator animator;
+    public float damageMultiplier = 1;
 
     public TMP_Text ammoText;
     [SerializeField] protected GameObject bulletPrefab;
@@ -64,5 +65,5 @@ public  class WeaponCore:MonoBehaviour
         animator.SetTrigger("CancelAnim");
     }
 
-
+   
 }
