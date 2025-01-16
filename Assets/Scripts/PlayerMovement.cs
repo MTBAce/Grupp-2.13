@@ -89,7 +89,7 @@ public class PlayerMovement : MonoBehaviour
        
     }
 
-public void ApplyMobilityBoost()
+    public void ApplyMobilityBoost()
     {      
         Debug.Log("Mobility powerup");
         SpeedMultiplier = 1.2f;

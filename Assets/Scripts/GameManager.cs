@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public GameObject GameOver;
     public int enemiesKilled;
     public EnemySpawner enemySpawner;
+    public PowerupManager powerupManager;
 
 
     void Start()
@@ -30,9 +31,10 @@ public class GameManager : MonoBehaviour
     public void EnemyKilled()
     {
         enemiesKilled++;
-        if (enemiesKilled == 25)
+        if (enemiesKilled == 1)
         {
             enemySpawner.IncreaseDifficulty();
+            powerupManager.ShowPowerupChoices();
             enemiesKilled = 0;
         }
 

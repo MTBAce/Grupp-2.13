@@ -10,14 +10,12 @@ public class PowerupManager : MonoBehaviour
 
     private PowerUps[] currentPowerups;
 
-    private void OnEnable()
-    {
-     ShowPowerupChoices();
-    }
+   
 
     public void ShowPowerupChoices()
     {
         powerupUI.SetActive(true);
+        Cursor.visible = true;
 
         // Create a temporary list of power-ups to ensure unique selection
         List<PowerUps> tempPowerupPool = new List<PowerUps>(powerupPool);
@@ -46,5 +44,6 @@ public class PowerupManager : MonoBehaviour
     {
         currentPowerups[index].Apply(); // Apply the selected power-up
         powerupUI.SetActive(false); // Hide the UI
+        Cursor.visible = false;
     }
 }

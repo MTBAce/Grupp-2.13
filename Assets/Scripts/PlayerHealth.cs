@@ -37,11 +37,11 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collider)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collider.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            enemyAI = collider.gameObject.GetComponent<EnemyAI>();
+            enemyAI = collision.gameObject.GetComponent<EnemyAI>();
             TakeDamage();
         }
         
