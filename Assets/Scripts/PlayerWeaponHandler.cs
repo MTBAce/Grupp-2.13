@@ -1,8 +1,9 @@
 using System;
 using System.Runtime.CompilerServices;
+using System.Runtime.ConstrainedExecution;
 using UnityEditor;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class PlayerWeaponHandler : MonoBehaviour
 {
     [NonSerialized] public WeaponCore currentWeapon;
@@ -11,6 +12,8 @@ public class PlayerWeaponHandler : MonoBehaviour
     [SerializeField] GameObject shotgunPrefab;
     [SerializeField] GameObject smgPrefab;
     [SerializeField] GameObject dualPistolPrefab;
+    [SerializeField] private Image crosshairImage;
+    [SerializeField] private Canvas uiCanvas;
 
     private WeaponCore ar;
     private WeaponCore shotgun;
@@ -25,21 +28,29 @@ public class PlayerWeaponHandler : MonoBehaviour
         smg = smgPrefab.GetComponent<SMG>();
         dualPistol = dualPistolPrefab.GetComponent<DualPistol>();
 
-        currentWeapon = (WeaponCore) dualPistol;
+        EquipWeapon(dualPistol);
+        
+        
+            // Döljer muspekaren
+        Cursor.visible = false;
 
+            // Låser musen till mitten av skärmen (valfritt)
+        Cursor.lockState = CursorLockMode.None; // Eller CursorLockMode.Locked
     }
     public void EquipWeapon(WeaponCore newWeapon)
     {
-        currentWeapon.gameObject.SetActive(false);
-       
-        // Set the new weapon as the current weapon
+        if (currentWeapon != null)
+        {
+            currentWeapon.gameObject.SetActive(false);
+        }
+
         currentWeapon = newWeapon;
+        currentWeapon.gameObject.SetActive(true);
 
-        // Enable the new weapon
+        // Uppdatera crosshair-bilden
+        UpdateCrosshair(currentWeapon.weaponData.crosshairSprite);
 
-         currentWeapon.gameObject.SetActive(true);
-         Debug.Log($"Equipped {currentWeapon.weaponData.weaponName}");
-        
+        Debug.Log($"Equipped {currentWeapon.weaponData.weaponName}");
         currentWeapon.ammoText.text = "Ammo: " + currentWeapon.weaponData.currentAmmo;
 
     }
@@ -75,12 +86,45 @@ public class PlayerWeaponHandler : MonoBehaviour
         {
             EquipWeapon(dualPistol);
         }
+
+        UpdateCrosshairPositionAndRotation();
     }
 
     public void ReFillAmmo()
     {
         currentWeapon.weaponData.currentAmmo += currentWeapon.weaponData.ammoBoxAmount;
         currentWeapon.ammoText.text = "Ammo: " + currentWeapon.weaponData.currentAmmo;
+    }
+    private void UpdateCrosshair(Sprite newCrosshair)
+    {
+        if (crosshairImage != null && newCrosshair != null)
+        {
+            crosshairImage.sprite = newCrosshair;
+        }
+    }
+    private void UpdateCrosshairPositionAndRotation()
+    {
+        // Hämta musens position i skärmpixlar
+        Vector2 mousePosition = Input.mousePosition;
+
+        // Översätt skärmpixelkoordinater till canvasposition
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            uiCanvas.GetComponent<RectTransform>(),
+            mousePosition,
+            uiCanvas.worldCamera,
+            out Vector2 canvasPosition);
+
+        // Uppdatera crosshair-position
+        crosshairImage.rectTransform.anchoredPosition = canvasPosition;
+
+        // Beräkna rotation baserat på musens riktning från spelaren
+        Vector3 playerPosition = Camera.main.WorldToScreenPoint(transform.position);
+        Vector2 direction = mousePosition - (Vector2)playerPosition;
+
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+        // Rotera crosshair
+        crosshairImage.rectTransform.rotation = Quaternion.Euler(0, 0, angle + 90);
     }
 }
 

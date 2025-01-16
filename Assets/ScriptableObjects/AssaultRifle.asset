@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aed12424c2089334eaeda491393fb4ee, type: 3}
   m_Name: AssaultRifle
   m_EditorClassIdentifier: 
+  crosshairSprite: {fileID: 21300000, guid: 4deb3778eb3129444a8ef3622056a571, type: 3}
   weaponName: Assault Rifle
   weaponAnimation: AR_Shooting
   bulletForce: 20
   fireRate: 0.15
   spreadAngle: 6
   pelletCount: 1
-  currentAmmo: 152
+  currentAmmo: 114
   startingAmmo: 160
   ammoBoxAmount: 100
   damage: 20

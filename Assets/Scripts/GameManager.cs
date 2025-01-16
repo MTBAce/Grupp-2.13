@@ -21,7 +21,10 @@ public class GameManager : MonoBehaviour
         FindFirstObjectByType<Score>().GameOver();
 
         GameOver.SetActive(true);
-               
+        Cursor.visible = true;
+
+        Cursor.lockState = CursorLockMode.None; // Eller CursorLockMode.Locked
+
         Time.timeScale = .2f;
     }
     public void EnemyKilled()

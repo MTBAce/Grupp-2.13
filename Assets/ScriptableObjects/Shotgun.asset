@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aed12424c2089334eaeda491393fb4ee, type: 3}
   m_Name: Shotgun
   m_EditorClassIdentifier: 
+  crosshairSprite: {fileID: 21300000, guid: 57c72054cce65a244922b2e31999ac8e, type: 3}
   weaponName: Shotgun
   weaponAnimation: Shotgun_Shooting
   bulletForce: 18

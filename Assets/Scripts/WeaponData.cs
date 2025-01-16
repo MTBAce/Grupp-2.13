@@ -1,8 +1,13 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 [CreateAssetMenu(fileName = "NewWeaponData", menuName = "Weapon/WeaponData")]
 public class WeaponData : ScriptableObject
+
 {
+
+    [Header("UI")]
+    public Sprite crosshairSprite;
+
     [Header ("Weapon Data")]
     
     public string weaponName;
