@@ -258,7 +258,7 @@ MonoBehaviour:
   config: {fileID: 11400000, guid: c7f2b4dd9c5d8914b95412ab943d42be, type: 2}
   gameManager: {fileID: 0}
   playerDamageMultiplier: 1
-  powerUps:
+  supplies:
   - {fileID: 6900571158353885079, guid: 486af52797c347d47bf35226571c33cc, type: 3}
   - {fileID: 7432252503644127356, guid: 5f18cf05078f00e48b1316253dba6b25, type: 3}
   dropChance: 0.1

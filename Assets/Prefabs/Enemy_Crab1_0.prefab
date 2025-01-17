@@ -260,7 +260,8 @@ MonoBehaviour:
   damageParticles: {fileID: 4309642212988442362, guid: 5e5d196eb39418848af6371e76bb4ed2, type: 3}
   config: {fileID: 11400000, guid: 4838cf1c6ba194746ae429599113e5ec, type: 2}
   gameManager: {fileID: 0}
-  powerUps:
+  playerDamageMultiplier: 1
+  supplies:
   - {fileID: 7432252503644127356, guid: 5f18cf05078f00e48b1316253dba6b25, type: 3}
   - {fileID: 6900571158353885079, guid: 486af52797c347d47bf35226571c33cc, type: 3}
   dropChance: 0.1
