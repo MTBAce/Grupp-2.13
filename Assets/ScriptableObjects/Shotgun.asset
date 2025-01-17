@@ -17,7 +17,7 @@ MonoBehaviour:
   weaponAnimation: Shotgun_Shooting
   bulletForce: 18
   fireRate: 0.55
-  spreadAngle: 17
+  spreadAngle: 20
   pelletCount: 6
   currentAmmo: 13
   startingAmmo: 45
