@@ -56,15 +56,15 @@ public class GameManager : MonoBehaviour
 
     public void UnlockWeapons()
     {
-        if (enemiesKilled == 50)
+        if (enemiesKilled == 25)
         {
             arUnlocked = true;
         }
-        if (enemiesKilled == 150)
+        if (enemiesKilled == 50)
         {
             shotgunUnlocked = true;
         }
-        if (enemiesKilled == 300)
+        if (enemiesKilled == 100)
         {
             machinegunUnlocked = true;
         }
