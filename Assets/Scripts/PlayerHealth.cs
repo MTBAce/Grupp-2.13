@@ -16,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
 
     public CameraFollow cameraShake;
 
-    public float healAmount = 20f; // Amount to heal when colliding with healing objects
+    public float healAmount = 50f; // Amount to heal when colliding with healing objects
 
     public Image damageOverlay; // Assign this in the Inspector
     public float overlayFadeSpeed = 2f; // How quickly the overlay fades out

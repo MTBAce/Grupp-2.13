@@ -1,4 +1,4 @@
-using UnityEditor.Rendering.Analytics;
+
 using UnityEngine;
 
 public class KillParticles : MonoBehaviour, Bullet.IPrefabLifeTime

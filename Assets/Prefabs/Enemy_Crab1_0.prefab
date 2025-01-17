@@ -264,8 +264,7 @@ MonoBehaviour:
   supplies:
   - {fileID: 7432252503644127356, guid: 5f18cf05078f00e48b1316253dba6b25, type: 3}
   - {fileID: 6900571158353885079, guid: 486af52797c347d47bf35226571c33cc, type: 3}
-  dropChance: 0.1
-  pointsOnDeath: 10
+  dropChance: 0.11
 --- !u!50 &1421675271917563415
 Rigidbody2D:
   serializedVersion: 5

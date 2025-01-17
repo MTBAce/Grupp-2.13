@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Bigger Flashlight
   m_EditorClassIdentifier: 
   powerupName: Bigger Flashlight
-  icon: {fileID: 2620665095363607877, guid: 382f5884ce839194f9612ed14287230c, type: 3}
+  icon: {fileID: -6595937427110953973, guid: 444a3b0a9ddcae840bdb7bf7e87d87b3, type: 3}

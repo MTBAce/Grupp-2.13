@@ -9,18 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 38db47454ce79234492148d8b1990773
   - enabled: 1
-    path: Assets/Scenes/Main Game 2.unity
-    guid: 9286f859c9b688a48b053dd9baabc2e1
-  - enabled: 0
-    path: Assets/Scenes/Deaw 4.0.unity
-    guid: 079bf4702088789498389bc89e229775
-  - enabled: 0
-    path: Assets/Scenes/MainGame.unity
-    guid: 2ea67f8c709eced408b0c931c7e42cf3
-  - enabled: 0
-    path: Assets/Scenes/Deaw.unity
-    guid: 2884cf172878f9442bef7e0d61c90a9b
-  - enabled: 0
     path: Assets/Scenes/Elliott Workspace.unity
     guid: 6c4d96b95b0337f4191422f079141718
   m_configObjects: {}

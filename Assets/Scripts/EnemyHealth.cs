@@ -13,7 +13,7 @@ public class EnemyHealth : MonoBehaviour
     [Range(0f, 1f)] public float dropChance = 0.5f; // Sannolikheten att en power-up spawnar (0-1)
 
     private float health;
-    public int pointsOnDeath; // Poäng som ges när fienden dör
+    int pointsOnDeath; // Poäng som ges när fienden dör
 
     private PlayerWeaponHandler playerWeaponHandler;
 
