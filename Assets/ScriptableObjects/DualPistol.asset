@@ -16,13 +16,13 @@ MonoBehaviour:
   weaponName: Dual Pistol
   weaponAnimation: DualPistol_Shooting
   bulletForce: 20
-  fireRate: 0.2
-  spreadAngle: 2.2
+  fireRate: 0.15
+  spreadAngle: 1.7
   pelletCount: 1
-  currentAmmo: 100
-  startingAmmo: 100
+  currentAmmo: 136
+  startingAmmo: 150
   ammoBoxAmount: 100
-  damage: 20
+  damage: 15
   magnitude: 0.2
   duration: 0.3
   moveSpeed: 3.2
