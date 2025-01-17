@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FastEnemy
   m_EditorClassIdentifier: 
   health: 20
-  moveSpeed: 3
+  moveSpeed: 3.5
   stopDistance: 0.3
   scoreValue: 50
   damage: 10

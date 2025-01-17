@@ -16,7 +16,7 @@ MonoBehaviour:
   weaponName: Assault Rifle
   weaponAnimation: AR_Shooting
   bulletForce: 20
-  fireRate: 0.15
+  fireRate: 0.12
   spreadAngle: 6
   pelletCount: 1
   currentAmmo: 160
