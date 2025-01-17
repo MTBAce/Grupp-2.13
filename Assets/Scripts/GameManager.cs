@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Unity;
 using UnityEngine.SceneManagement;
+using TMPro;
 using System.Security.Cryptography;
 
 public class GameManager : MonoBehaviour
@@ -10,12 +11,13 @@ public class GameManager : MonoBehaviour
     public int enemiesKilled;
     public EnemySpawner enemySpawner;
     public PowerupManager powerupManager;
+    public float nextPowerup = 50;
 
+    public bool arUnlocked = false;
+    public bool shotgunUnlocked = false;
+    public bool machinegunUnlocked = false;
 
-    void Start()
-    {
-      
-    }
+    public TMP_Text killCount;
 
     public void KillPlayer()
     {      
@@ -31,11 +33,13 @@ public class GameManager : MonoBehaviour
     public void EnemyKilled()
     {
         enemiesKilled++;
-        if (enemiesKilled == 30)
+        UnlockWeapons();
+        killCount.text = "Kills:" + enemiesKilled;
+        if (enemiesKilled == nextPowerup)
         {
             enemySpawner.IncreaseDifficulty();
             powerupManager.ShowPowerupChoices();
-            enemiesKilled = 0;
+            nextPowerup += 50;
         }
 
     }
@@ -49,5 +53,22 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f; 
         SceneManager.LoadScene("MainMenu"); 
     }
+
+    public void UnlockWeapons()
+    {
+        if (enemiesKilled == 50)
+        {
+            arUnlocked = true;
+        }
+        if (enemiesKilled == 150)
+        {
+            shotgunUnlocked = true;
+        }
+        if (enemiesKilled == 300)
+        {
+            machinegunUnlocked = true;
+        }
+    }
+
 }
 

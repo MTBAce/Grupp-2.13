@@ -16,6 +16,8 @@ public class PlayerWeaponHandler : MonoBehaviour
     [SerializeField] private Canvas uiCanvas;
     PlayerHealth playerHealth;
 
+    public GameManager gameManager;
+
     private WeaponCore ar;
     private WeaponCore shotgun;
     private WeaponCore smg;
@@ -74,19 +76,19 @@ public class PlayerWeaponHandler : MonoBehaviour
                 }
             }
 
-            if (Input.GetKeyDown(KeyCode.Alpha1))
+            if (Input.GetKeyDown(KeyCode.Alpha2) && gameManager.arUnlocked == true )
             {
                 EquipWeapon(ar);
             }
-            if (Input.GetKeyDown(KeyCode.Alpha2))
+            if (Input.GetKeyDown(KeyCode.Alpha3) && gameManager.shotgunUnlocked == true)
             {
                 EquipWeapon(shotgun);
             }
-            if (Input.GetKeyDown(KeyCode.Alpha3))
+            if (Input.GetKeyDown(KeyCode.Alpha4) && gameManager.machinegunUnlocked == true)
             {
                 EquipWeapon(smg);
             }
-            if (Input.GetKeyDown(KeyCode.Alpha4))
+            if (Input.GetKeyDown(KeyCode.Alpha1))
             {
                 EquipWeapon(dualPistol);
             }
