@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b7dc5a1d8ee0d240968f2bf14706d77, type: 3}
-  m_Name: Increased Mobility
+  m_Name: Increased Radar
   m_EditorClassIdentifier: 
-  powerupName: Increased Mobility
-  icon: {fileID: -4085138541393233401, guid: 444a3b0a9ddcae840bdb7bf7e87d87b3, type: 3}
+  powerupName: Increased Radar
+  icon: {fileID: 2138211964766833134, guid: 382f5884ce839194f9612ed14287230c, type: 3}
